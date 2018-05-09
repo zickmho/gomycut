@@ -1,0 +1,1078 @@
+
+@font-face {
+    font-family: GothamRnd;
+    src: url(fonts/GothamRnd-Medium.otf);
+}
+
+body {
+    margin: 0;
+    font-family: 'GothamRnd', sans-serif;
+    /*min-width: 360px;*/
+}
+
+header {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    background-image: url(../imgs/header.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+a:link {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:visited {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:hover {
+    color: inherit;
+    text-decoration: none;
+}
+
+a:active {
+    color: inherit;
+    text-decoration: none;
+}
+
+.hideX {
+
+}
+@media (max-width:600px) {
+    .hideX {
+        display: none !important;
+    }
+}
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+    border-radius: 0px;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+.navbar-brand {
+    position: absolute;
+   /* left: 47%;*/
+    height: 100px;
+}
+
+.navbar-left {
+    float: left;
+    margin: 15px 30px;
+}
+
+.navbar-right {
+    float: right;
+    margin: 15px 30px;
+    font-weight: bold;
+}
+
+.menu-item {
+    font-weight: bold;
+    letter-spacing: 1px;
+    cursor: pointer;
+    color: #E5B168;
+}
+
+.menu-item a{
+    padding: 0px 10px;
+}
+
+.menu-item:hover {
+    color: #E5B168;
+}
+
+.header-content {
+    width: 100%;
+    top: 50%;
+    -webkit-transform: translateY(10%);
+    -ms-transform: translateY(10%);
+    transform: translateY(10%);
+    text-align: center;
+    height: 100vh;
+}
+
+.header-title {
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    padding-top: 20%;
+    color: #ffffff;
+}
+
+.header-sub-title {
+    text-transform: none;
+    font-size: 30px;
+    padding: 0px 20px;
+    color: #ffffff;
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.8);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.app-store-badge {
+    height: 44px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.section {
+    width: 100%;
+    padding: 50px 0;
+    background-color: ##efefef;
+}
+
+.how-it-work {
+    width: 100%;
+    background-color: #fffaf4;
+}
+
+.title1 {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 35px;
+    margin: 30px 0;
+}
+
+.section-content {
+    width: 100%;
+    margin-top: 50px;
+    padding-bottom: 100px;
+    text-align: center;
+    background-color: #fffaf4;
+}
+
+.image-title {
+    margin: 10px;
+}
+
+.image-title p{
+    color: #b27a25;
+    font-size: 25px;
+    float: left;
+}
+
+.image-title img {
+    height: 35px;
+}
+
+.title2 {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px;
+}
+
+.content {
+    font-size: 15px;
+    padding: 10px;
+    color: #777;
+}
+
+.banner {
+    float: left;
+    text-align: center;
+    width: 100%;
+    padding: 80px 0;
+}
+
+.banner-container {
+    border-top: 1px solid #c7c8ca;
+    border-bottom: 1px solid #c7c8ca;
+    width: 80%;
+    margin: 0 10%;
+    text-align: center;
+}
+
+.banner-content {
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: .6px;
+    color: #777;
+    padding: 10px;
+}
+
+.banner-content:before {
+    content: url(../imgs/check.svg);
+    position: absolute;
+    margin-top: -6px;
+    margin-left: -25px;
+}
+
+.carousel {
+    float: left;
+    background-image: url(../imgs/carousel1.jpg);
+    background-position: 50%;
+    background-size: cover;
+    transition: background-image .3s;
+}
+
+.carousel-top {
+    /*padding: 50px 200px;*/
+    position: relative;
+}
+
+.carousel-item {
+    background-color: #dedede;
+    color: #777;
+    font-weight: bold;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 16px 10px;
+    margin: 10px 4%;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.carousel-item:hover {
+    transition-property: background-color, color;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+    background-color: hsla(0,0%,98%,.3);
+    color: #E5B168;
+}
+
+.carousel-item.selected {
+    background-color: hsla(0,0%,98%,.3);
+    color: #E5B168;
+}
+
+.carousel-item.selected:after {
+    display: block;
+}
+
+.carousel-item:after {
+    box-sizing: border-box;
+    content: "";
+    position: absolute;
+    display: none;
+    top: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-top: 10px solid hsla(0,0%,98%,.6);
+}
+
+.carousel-content {
+    padding: 20% 50px;
+}
+
+.title3 {
+    font-size: 2em;
+    color: #E5B168;
+    font-weight: bold;
+    letter-spacing: 1px;
+    line-height: 1.4;
+    padding: 10px;
+}
+
+
+.title4 {
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: #E5B168;
+}
+
+.content2 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #E5B168;
+    padding: 10px;
+}
+
+.content3 {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.testimonials {
+    float: left;
+    background-color: #202020;
+}
+
+.testimonial {
+    position: relative;
+    text-align: center;
+    padding: 10px;
+}
+
+.testimonial-container {
+    border-radius: 8px;
+    position: relative;
+    padding: 2.4375em;
+    background-color: #eeeeee;
+    text-align: center;
+    overflow: hidden;
+}
+
+.testimonial-photo img {
+    border: 1px solid transparent;
+    border-radius: 150px !important;
+    height: 100px;
+    padding: 3px;
+    width: 100px;
+    margin-bottom: 20px;
+    margin-right: 15px;
+    vertical-align: middle;
+}
+
+.testimonial-content {
+    font-size: 14px;
+}
+
+.download-app {
+    float: left;
+    background-color: #202020;
+}
+
+.download-app-img {
+    background-color: #202020;
+    z-index: 3;
+}
+
+.download-app-img img {
+    float: right;
+    max-width: 85%;
+    max-height: 460px;
+    padding: 10px;
+}
+
+.download-app-link {
+    margin: 100px 0;
+    background-color: #202020;
+    text-align: left;
+    height: 100%;
+    z-index: 1;
+}
+
+.footer {
+    float: left;
+    background-color: ##efefef;
+    text-align: center;
+}
+
+.footer-container {
+    background-color: #efefef;
+    text-align: center;
+}
+
+.footer-menu {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #E5B168;
+    padding: 5px;
+    margin-bottom: 15px;
+}
+
+.footer-menu-item {
+    cursor: pointer;
+    font-size: .9em;
+    padding: 5px;
+    color: #202020;
+}
+
+.footer-menu-item:hover {
+    color: #202020;
+}
+
+.copyright {
+    width: 100%;
+    float: left;
+    padding: 20px 0;
+    background-color: #202020;
+    color: #d0d0d0;
+}
+
+.address {
+    text-align: left;
+}
+
+.contacts {
+    text-align: right;
+}
+
+.contact-item {
+    font-size: 13px;
+    letter-spacing: .3px;
+    color: #FFD700;
+}
+
+.apply-header {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    background-image: url(../imgs/apply-header.jpg);
+    color: #fafafa;
+    background-position: 50%;
+    background-size: cover;
+}
+
+.apply-content {
+    position: relative;
+    z-index: 3;
+    width: 80%;
+    padding-left: 60px;
+    padding-top: 80px;
+}
+
+.apply-form {
+    margin: 0 0%;
+}
+
+input {
+    width: 100%;
+    height: 40px;
+    background-color: #dedede;
+    border-radius: 1px;
+    border-color: #E5B168;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #E5B168;
+    font-size: 15px;
+}
+
+input.input-price {
+    height: 30px;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+select {
+    width: 100%;
+    height: 40px;
+    background-color: #dedede;
+    border-radius: 1px;
+    border-color: #E5B168;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 20px;
+    padding: 10px;
+    color: #E5B168;
+    font-size: 15px;
+}
+
+textarea {
+    width: 100%;
+    background-color: #dedede;
+    border-radius: 1px;
+    border-color: #E5B168;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 20px;
+    padding: 5px 10px;
+    color: #E5B168;
+    font-size: 15px;
+}
+
+.tagline {
+    height: 0;
+    border-top: 1px solid #E5B168;
+    text-align: center;
+    margin-bottom: 30px;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.apply-form-title {
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+    padding: 0 15px;
+    background: #dedede;
+    color: #222;
+    top: -10px;
+}
+
+.checkbox_wrapper{
+    position: relative;
+    height: 15px;
+    width: 15px;
+}
+
+input[type="checkbox"] {
+    opacity:0;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+}
+
+input[type="checkbox"] + label{
+    background: url(../imgs/unchecked.png);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    height: 15px;
+    width: 15px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+input[type="checkbox"]:checked + label{
+    background:url(../imgs/checked.png) no-repeat;
+    background-size: 100% 100%;
+    height: 15px;
+    width: 15px;
+    display:inline-block;
+    padding: 0 0 0 0px;
+}
+
+.checkbox_label {
+    margin-left: 20px;
+    margin-top: -2px;
+    font-weight: bold;
+}
+
+.input-price-label {
+    margin-top: 5px;
+    font-weight: bold;
+    text-align: right;
+}
+
+.btn-register {
+    display: inline-block;
+    width: 150px;
+    border-radius: 1px;
+    border-color: #E5B168;
+    border-style: solid;
+    border-width: 2px;
+    margin: 30px 0;
+    padding: 10px;
+    color: #E5B168;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.upload-photo {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    border-radius: 1px;
+    border-color: #E5B168;
+    border-style: solid;
+    border-width: 2px;
+    margin-bottom: 10px;
+    padding: 10px;
+    color: #E5B168;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.btn-photo-upload {
+    position: absolute;
+    z-index: 3;
+    top: 45px;
+    left: 40px;
+}
+
+.btn-photo-upload i {
+    font-size: 40px;
+}
+
+.prev-photo {
+    position: absolute;
+    z-index: 1;
+    width: 146px;
+    height: 146px;
+    top: 0;
+    left: 0;
+}
+
+.alert {
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #E5B168;
+}
+
+.btn-subscribe {
+    height: 40px;
+    background-color: #E5B168;
+    padding: 5px;
+    font-size: 17px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.overflow-hidden {
+    overflow: hidden;
+}
+
+.booking-sidebar h3 {
+    padding: 10px 20px;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+.booking-sidebar .list-book-summary {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.booking-sidebar .list-book-summary tr {
+    border-bottom: 1px solid #DDD;
+}
+
+.booking-sidebar .list-book-summary tr:last-child {
+    border-bottom: 0;
+}
+
+.booking-sidebar .list-book-summary td {
+    padding: 10px;
+}
+
+.booking-sidebar .pricing-summary {
+    background: #E4E4E4;
+    padding: 16px;
+    border-radius: 4px;
+}
+
+.booking-sidebar .pricing-summary .subtotal,
+.booking-sidebar .pricing-summary .discount,
+.booking-sidebar .pricing-summary .total {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 2px 0px;
+}
+
+.booking-sidebar .pricing-summary .discount {
+    color: #909090;
+}
+
+.booking-sidebar .pricing-summary .total {
+    font-size: 24px;
+    font-weight: bold;
+    padding-bottom: 0px;
+}
+
+.booking-sidebar .pricing-summary .extra-note em {
+    font-size: 14px;
+    color: #0d6fa0;
+}
+
+.booking-sidebar .pricing-summary .extra-note .movein-deposit {
+    padding: 20px;
+    background-color: #666;
+    color: white;
+    border-radius: 6px;
+}
+
+.booking-sidebar .pricing-summary .extra-note p:first-child {
+    font-size: 23px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.booking-sidebar .pricing-summary .extra-note p {
+    text-align: center;
+    font-size: 14px;
+}
+
+.booking-sidebar .affix {
+    background: #E4E4E4;
+    position: fixed;
+    top: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 2px 10px 0px;
+    z-index: 100;
+}
+
+.booking-sidebar::after {
+    width: 1000px;
+    background: #ECF0F1;
+    content: '';
+    height: 100%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+}
+
+.booking-sidebar {
+    min-height: 800px !important;
+    height: auto !important;
+    margin-bottom: 0;
+    padding-bottom: 132px;
+    background-color: gray;
+}
+
+
+.booking-content {
+    padding: 30px 30px 30px 70px;
+}
+
+@media (max-width:600px){
+    .booking-content {
+        padding: 30px 0px 0px 0px;
+    }
+
+}
+
+.booking-content .select-container:first-child {
+    margin-right: 10px;
+}
+
+.booking-content .select-container:last-child {
+    margin-left: 10px;
+}
+
+.booking-content .book-container .select-service {
+    color: white;
+}
+
+.booking-content .select-service {
+    padding: 50px 10px 10px 15px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    cursor: pointer;
+    min-height: 98px;
+}
+
+.booking-content .select-payment-type {
+    padding: 15px 10px 10px 15px;
+}
+
+.booking-content .selected {
+    background-color: #38abe5;
+    color: white;
+    border: 1px solid #38abe5;
+}
+
+.pricing-content {
+    background-color: gray;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+.booking-progress {
+    background-color: grey;
+    padding: 10px 20px;
+}
+
+.progress {
+    height: 7px;
+    background-color: #cccccc;
+}
+
+.progress-bar {
+    background-color: #f0ad4e;
+}
+
+.gap-sm {
+    padding-bottom: 20px;
+}
+
+.circle-badge {
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    line-height:100px;
+    text-align: center;
+    border-radius: 100%;
+    color:white;
+    margin-left:auto;
+    margin-right:auto;
+    background-color: #f0ad4e;
+    vertical-align: middle;
+}
+
+.circle-badge.deselect {
+    background-color: #cccccc;
+}
+
+.svg-badge {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    line-height: 85px;
+}
+@media (max-width:600px){
+    .svg-badge {
+        position: absolute;
+        top: 33px;
+        left: 0;
+        right: 0;
+        height: 100px;
+        line-height: 85px;
+    }
+    .progress{
+        margin-top:20px;
+    }
+
+}
+
+.service-detail,
+.booking-contact,
+.booking-address,
+.request-time,
+.agreement,
+.login-panel,
+.status-detail {
+    background-color: grey;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.payment-detail,
+.credit-card-details {
+    background-color: white;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 15px;
+}
+
+.credit-card-details {
+    margin-top: 0px;
+    border-top: dotted 1px #38abe5;
+}
+
+.payment-detail h3,
+.credit-card-details h3{
+    color: #38abe5;
+}
+
+.booking-summary {
+    padding: 10px 0px;
+    font-size: 15px;
+}
+
+.service-detail h3,
+.booking-contact h3,
+.booking-address h3,
+.request-time h3,
+.status-detail h3{
+    color: #f0ad4e;
+}
+
+.status-detail h1 {
+    color: #f0ad4e;
+    text-align: center;
+}
+
+.status-table {
+    width: 100%;
+    padding: 20px;
+}
+
+.status-table .first{
+    text-align: center;
+    font-size: 50px;
+    color: #0d6fa0;
+}
+
+.status-table .last {
+    font-size: 20px;
+}
+
+.status-table .first.passed {
+    color: #122b40;
+}
+
+.status-table .first.current {
+    color: darkred;
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.status-table .last.current {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.pricing-table {
+    width: 100%;
+
+}
+
+.pricing-table td {
+    height: 150px;
+}
+
+.pricing-table td:last-child {
+    text-align: right;
+    font-size: 40px;
+}
+
+.pricing-table .pricing-title {
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+@media (max-width:600px){
+    .pricing-table .pricing-title {
+        font-size: 17px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .pricing-table .pricing-detail {
+        font-size: 10px;
+        font-weight: bold;
+        letter-spacing: 2px;
+    }
+    .pricing-table td {
+        height: 110px;
+    }
+    .pricing-content{
+        padding: 30px 30px 30px 10px;
+    }
+    .container, .container-fluid {
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+}
+
+input[type="radio"] {
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    z-index: 2;
+}
+
+.service-detail label {
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.checkbox input[type="checkbox"] {
+    opacity: 1;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+    top: auto;
+    left: auto;
+    z-index: 2;
+}
+
+.contact-information,
+.address-information{
+    padding-top: 10px;
+}
+
+.contact-information input,
+.address-information input,
+.time-information input,
+.pay-information input,
+.login-panel input{
+    width: 100%;
+    text-align: center;
+    color: #000000;
+    border-color: black;
+    border-width: 1px;
+}
+
+.login-panel input {
+    margin-bottom: 0px;
+}
+
+.address-information textarea {
+    color: #000000;
+    border-color: black;
+    border-width: 1px;
+}
+
+.contact-information input[type="button"],
+.pay-information input[type="button"],
+.login-panel input[type="button"] {
+    border: none;
+}
+
+.booking-list,
+.booking-account,
+.booking-address-info {
+    padding: 10px 10px;
+}
+
+.top-border {
+    border-top: solid 1px;
+}
+
+.booking-table {
+    width: 100%;
+    margin-top: 20px;
+}
+
+.booking-table .last{
+    text-align: right;
+}
+
+.subtitle {
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+.summary-address,
+.summary-remark,
+.summary-date {
+    padding-top: 20px;
+}
+
+.verify-code-form {
+    border-top: solid 1px;
+    border-bottom: solid 1px;
+    border-color: lightgray;
+    padding:5px 10px;
+    font-size: 15px;
+    color: gray;
+}
+
+.verify-code-form strong {
+    color: #000000;
+}
+
+.input-code {
+    line-height: 2;
+    height: 60px;
+    font-size: 30px;
+    letter-spacing: 16px;
+    font-weight: bold;
+}
+
+.label-resent,
+.label-invalid {
+    color: red;
+    font-weight: 100;
+    width: 100%;
+    text-align: center;
+}
