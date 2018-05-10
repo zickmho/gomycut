@@ -1,0 +1,47 @@
+.btn:not(.btn-lg)
+    border-radius: $base-radius
+    font-size: $font-6-size
+
+    @include media-breakpoint-up(lg)
+        padding: $spacing-sm $spacing-md
+
+.btn-lg
+    font-size: 1.15rem
+    
+.btn-primary
+    background-color: $button-primary-fill
+    border: 3px solid $button-primary-border
+    color: $dark-400
+    font-weight: 800
+
+    &:hover,
+    &:focus,
+    &:active
+        background-color: $button-primary-fill-hover
+        border: 3px solid $button-primary-border-hover
+        color: $dark-400
+
+.btn-secondary
+    background-color: $dark !important
+    color: $white
+    border-color: $dark
+
+.btn-outline-primary
+    border-color: $gold-100
+    color: $gold-100
+
+    &:hover,
+    &:active
+        background-color: $gold-100
+        color: $dark-400
+        border-color: $gold-100
+
+.btn-outline-secondary
+    border-color: $white
+    color: $white
+
+    &:hover,
+    &:active
+        background-color: $white
+        color: $dark-100
+        border-color: $white

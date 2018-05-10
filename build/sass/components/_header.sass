@@ -1,0 +1,150 @@
+@include media-breakpoint-down(sm)
+    body
+        padding-top: $header-bottom-height
+
+.header
+    position: relative
+    z-index: 10
+    font-size: $font-6-size
+
+    ul
+        list-style: none
+        margin: 0
+        padding: 0
+
+    a
+        text-decoration: none !important
+
+    @include media-breakpoint-down(sm)
+        position: fixed
+        top: 0
+        left: 0
+        right: 0
+
+.header-top
+    background-color: $header-top-fill
+    background-image: url(#{$image-path}/pattern-round-white.png)
+    background-repeat: repeat
+    background-size: 34px auto
+    height: $header-top-height
+    color: $white
+    position: relative
+    z-index: 10
+
+.header-bottom
+    background-image: linear-gradient(to top, $gold, $gold-100)
+    color: $dark-200
+    height: $header-bottom-height
+    position: relative
+    z-index: 10
+
+    a:not(.btn)
+        color: $dark-200
+        font-weight: $font-weight-bold
+        -webkit-font-smoothing: antialiased
+
+.logo-main
+    position: absolute
+    top: 0
+    left: calc(50% - 67.5px)
+    width: 135px
+    height: 121px
+    background-color: $dark
+    padding: $spacing-sm
+
+    @include media-breakpoint-down(md)
+        width: 100px
+        height: 80px
+        left: calc(50% - 50px)
+
+    @include media-breakpoint-up(lg)
+        top: -$header-top-height
+
+    .logo-wrapper
+        border: 1px solid $gold-100
+        padding: $spacing-sm
+        text-align: center
+        width: 100%
+        height: 100%
+        margin: 0 auto
+
+        img
+            height: 86px
+
+            @include media-breakpoint-down(md)
+                    height: 48px
+
+.nav-left > ul,
+.nav-right > ul
+    height: $header-bottom-height
+
+.mobile-hamburger__button
+    padding: 10px
+    border: 0
+    background: none
+    height: 25px
+    outline: 0 !important
+
+    span
+        transition: all .3s ease
+        background: $dark
+        height: 2px
+        width: 24px
+        display: block
+        position: relative
+        transition: .2s ease all
+
+        .mobile-menu-opened &
+            background: transparent
+
+        &:before,
+        &:after
+            content: ""
+            height: 2px
+            position: absolute
+            background-color: $dark
+            width: 24px
+            left: 0
+            transition: .2s ease all
+
+        &:before
+            top: 6px
+
+            .mobile-menu-opened &
+                transform: rotate(45deg)
+                top: 0
+
+        &:after
+            bottom: 6px
+
+            .mobile-menu-opened &
+                transform: rotate(-45deg)
+                bottom: 0
+
+.mobile-nav
+    background-color: $dark-100
+    position: absolute
+    left: 0
+    right: 0
+    top: $header-bottom-height
+    transform: translateY(-100%)
+    transition: .2s ease all
+    z-index: 9
+
+    .mobile-menu-opened &
+        transform: translateY(0)
+
+    a
+        color: $white
+        text-decoration: none !important
+
+    .mobile-nav__list
+        margin: 0
+        padding: 0
+        list-style: none
+
+        > li
+            margin: $spacing-md 0
+
+    .rule
+        border-top-color: rgba($white, 0.2)

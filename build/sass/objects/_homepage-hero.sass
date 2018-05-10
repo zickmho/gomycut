@@ -1,0 +1,109 @@
+.homepage-hero
+    // position: relative
+    // background-image: url(../images/hero-preview.jpg)
+    // background-repeat: no-repeat
+    // background-size: cover
+    // background-position: center center
+    position: relative
+    z-index: 1
+
+
+    @include media-breakpoint-down(sm)
+        background: url(#{$image-path}hero-preview.png) no-repeat
+        background-size: cover
+        background-position: top center
+
+.hero-wrapper
+
+    h1
+        text-shadow: 0 2px 2px rgba(0,0,0,0.4)
+        letter-spacing: 2px
+
+        @include media-breakpoint-down(sm)
+            letter-spacing: 0
+
+    p
+        font-size: $font-3-size
+        line-height: $font-3-height
+        color: $gold-300
+        text-shadow: 0 2px 2px rgba(0,0,0,0.2)
+        font-weight: 700
+        -webkit-font-smoothing: antialiased
+
+        @include media-breakpoint-down(sm)
+            font-size: $font-5-size
+            line-height: $font-5-height
+
+    .btn-primary
+        font-size: $font-5-size
+
+.homepage-hero,
+.hero-wrapper
+    // height: calc(100% - 100px)
+    height: 100%
+    overflow: hidden
+
+    @include media-breakpoint-down(xs)
+        height: 420px
+
+    .container
+        height: calc(100vh - 100px)
+        z-index: 10
+        max-width: 755px
+
+.hero-overlay
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    background-image: linear-gradient(to bottom, rgba(0,0,0,0.53), rgba(0,0,0,0.53) 69%, #000)
+    z-index: 2
+    height: 100%
+    width: 100%
+
+    @include media-breakpoint-down(sm)
+        background-image: linear-gradient(to bottom, rgba(0,0,0,0.53), rgba(0,0,0,0.83) 90%, #000)
+
+.mycut-video
+    transform: translate(-50%, -50%)
+    position: absolute
+    right: 0
+    bottom: 0
+    min-width: 100%
+    min-height: 100%
+    height: auto
+    width: auto
+    z-index: -100
+    transition: 1s opacity
+    top: 50%
+    left: 50%
+    background-image: url(#{$image-path}/hero-preview.jpg)
+    background-size: 100% 100%
+
+.learn-more
+    position: absolute
+    bottom: 20px
+    left: 50%
+    transform: translateX(-50%)
+    text-transform: uppercase
+    font-size: $font-7-size
+    letter-spacing: 0.5px
+
+    &:before,
+    &:after
+        content: ""
+        width: 1px
+        background-color: $white
+        height: 10px
+        transform-origin: bottom center
+        position: absolute
+        bottom: -10px
+
+    &:before
+        transform: rotate(-45deg)
+        left: 40px
+
+    &:after
+        transform: rotate(45deg)
+        left: 40px

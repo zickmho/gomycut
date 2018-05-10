@@ -74,6 +74,18 @@ Route::get('pricing', function() {
     return view('pricing');
 });
 
+Route::get('terms-and-conditions', function() {
+    return view('terms-and-conditions');
+});
+
+Route::get('privacy-policy', function() {
+    return view('privacy-policy');
+});
+
+Route::get('our-barbers', function() {
+    return view('our-barbers');
+});
+
 
 Route::post('apply/upload-photo', 'ApplyController@uploadPhoto');
 Route::post('apply/store', 'ApplyController@store');

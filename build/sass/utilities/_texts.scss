@@ -1,0 +1,51 @@
+/**
+ * Text colors
+ */
+.u-color-dark                 { color: $dark-400; }
+.u-color-muted                { color: $font-muted-color !important}
+.u-color-white                { color: $white  }
+.u-color-base                 { color: $font-base-color }
+
+.u-text-1 {
+    font-size: $font-1-size;
+    line-height: $font-1-height;
+}
+
+.u-text-2 {
+    font-size: $font-2-size;
+    line-height: $font-2-height;
+}
+
+.u-text-3 {
+    font-size: $font-3-size;
+    line-height: $font-3-height;
+}
+
+.u-text-4 {
+    font-size: $font-4-size;
+    line-height: $font-4-height;
+}
+
+.u-text-5 {
+    font-size: $font-5-size;
+    line-height: $font-5-height;
+}
+
+.u-text-6 {
+    font-size: $font-6-size;
+    line-height: $font-6-height;
+}
+
+.u-text-7 {
+    font-size: $font-7-size;
+    line-height: $font-7-height;
+}
+
+.u-text-8 {
+    font-size: $font-8-size;
+    line-height: $font-8-height;
+}
+
+.u-no-letter-spacing {
+    letter-spacing: 0;
+}

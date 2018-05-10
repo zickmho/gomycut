@@ -1,0 +1,47 @@
+h1, .h1 {
+    font-size: $font-1-size;
+    line-height: $font-1-height;
+
+    @include media-breakpoint-down(sm) {
+        font-size: $font-2-size;
+        line-height: $font-2-height;
+    }
+}
+h2, .h2 {
+    font-size: $font-2-size;
+    line-height: $font-2-height;
+
+    @include media-breakpoint-down(sm) {
+        font-size: $font-2-size - 4;
+        line-height: $font-2-height - 4;
+    }
+}
+h3, .h3 {
+    font-size: $font-3-size;
+    line-height: $font-3-height;
+}
+h4, .h4 {
+    font-size: $font-4-size;
+    line-height: $font-4-height;
+}
+h5, .h5 {
+    font-size: $font-5-size;
+    line-height: $font-5-height;
+}
+h6, .h6 {
+    font-size: $font-6-size;
+    line-height: $font-6-height;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    color: $font-heading-color;
+    font-weight: $font-weight-normal;
+    font-family: $font-heading-family;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+}

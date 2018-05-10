@@ -1,0 +1,65 @@
+.o-tile {
+    display: table;
+    width: 100%;
+}
+
+.o-tile--auto {
+    width: auto;
+}
+
+.o-tile--center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.o-tile--reversed {
+    direction: rtl;
+}
+
+.o-tile__item,
+.o-tile__left,
+.o-tile__body,
+.o-tile__right {
+    display: table-cell !important;
+    vertical-align: top;
+    direction: ltr;
+}
+
+.o-tile__left,
+.o-tile__right {
+    white-space: nowrap;
+    width: 1px;
+}
+
+.o-tile__left {
+    padding-right: $spacing-md;
+}
+
+.o-tile__right {
+    padding-left: $spacing-md;
+}
+
+.o-tile__content {
+    white-space: normal;
+}
+
+
+/* Alignment */
+
+.o-tile--middle {
+    > .o-tile__item,
+    > .o-tile__left,
+    > .o-tile__body,
+    > .o-tile__right {
+        vertical-align: middle;
+    }
+}
+
+.o-tile--bottom {
+    > .o-tile__item,
+    > .o-tile__left,
+    > .o-tile__body,
+    > .o-tile__right {
+        vertical-align: bottom;
+    }
+}
