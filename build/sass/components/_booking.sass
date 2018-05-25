@@ -1,0 +1,178 @@
+.booking-progress-bar
+    padding: $spacing-md
+    text-align: center
+    color: $white
+    background-color: $dark-300
+    background-image: url(#{$image-path}pattern-round.png)
+    background-repeat: repeat
+    background-size: 50px auto
+    border-radius: $base-radius
+
+    ul
+        list-style: none
+        padding-left: 0
+        display: flex
+
+        > li
+            flex: 1 0 auto
+            position: relative
+
+        > li:not(:nth-child(3)):before
+            content: ''
+            position: absolute
+            width: 25%
+            height: 2px
+            right: 0
+            top: 18px
+            background-color: rgba($white, .2)
+
+        > li:not(:nth-child(1)):after
+            content: ''
+            position: absolute
+            width: 25%
+            height: 2px
+            left: 0
+            top: 18px
+            background-color: rgba($white, .2)
+
+
+.progress-bar-indicator
+    display: inline-block
+    width: 35px
+    height: 35px
+    line-height: 33px
+    color: $white
+    border-radius: 50%
+    border: 2px solid $white
+
+    .active &
+        border-color: $green
+        background-color: $green
+
+.progress-bar-step
+
+    .active &
+        color: $green !important
+
+.booking-service__row
+    padding: $spacing-sm + 4 0 $spacing-sm + 4 $spacing-sm
+
+    & + &
+        border-top: 1px solid $gray-100
+
+    > .booking-service__type,
+    > .booking-service__price,
+        flex: 0 1 35%
+
+    > .booking-service__total
+        flex: 0 1 30%
+
+
+
+
+.booking-service__type
+    font-weight: $font-weight-bold
+
+.booking-service__price
+    text-align: center
+    color: $gold
+    font-weight: $font-weight-bold
+
+.booking-service__total
+
+    .form-control
+        width: 50px
+        text-align: center
+
+    .input-group
+
+        .btn-outline-secondary
+            border-color: $gray
+            background-color: #f5f5f5
+            color: $dark-400
+
+            &:hover
+                background-color: #f1f1f1
+
+            &:focus,
+            &:active
+                outline: 0
+                box-shadow: none !important
+                background-color: #f1f1f1
+                color: $dark-400 !important
+
+            &:disabled
+                background-color: #f5f5f5 !important
+                opacity: 0.45
+                cursor: not-allowed
+
+.box
+
+    label
+        font-size: $font-6-size
+        font-weight: $font-weight-bold
+
+
+.booking-sidebar
+    margin-top: 120px
+
+    ul
+        list-style: none
+        margin: 0
+        padding: 0
+
+.summary-service
+
+    li
+        padding: 12px 13px
+        background-color: transparent
+        border-radius: $base-radius
+        margin-bottom: 5px
+
+        &:not(.active)
+            opacity: .4
+
+        &.active
+            background-image: linear-gradient(to left, #CAC5BC, #C9BFA7)
+
+            .booking-price-sum
+                opacity: 1
+
+        > div:first-child
+            flex-basis: 55%
+
+        > div:nth-child(2)
+            flex-basis:  30%
+
+        > div:nth-child(3)
+            flex-basis:  15%
+
+    .booking-price-sum
+        color: $gold
+        opacity: 0
+
+.summary-total
+
+    border-top: 1px solid $gold
+    border-bottom: 1px solid $gold
+
+
+@include media-breakpoint-down(xs)
+
+    .progress-bar-step
+        font-size: $font-7-size
+        letter-spacing: 0
+
+    .booking-service__row
+        position: relative
+        padding-right: 150px
+        padding-left: 0
+
+    .booking-service__price
+        text-align: left
+
+    .booking-service__total
+        position: absolute
+        right: 0
+        top: 12px
+        width: 140px

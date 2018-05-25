@@ -86,6 +86,10 @@ Route::get('our-barbers', function() {
     return view('our-barbers');
 });
 
+Route::get('thank-you', function() {
+    return view('thank-you');
+});
+
 
 Route::post('apply/upload-photo', 'ApplyController@uploadPhoto');
 Route::post('apply/store', 'ApplyController@store');

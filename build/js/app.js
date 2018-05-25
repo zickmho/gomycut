@@ -41,4 +41,11 @@
     $(document).on('click', function(){
         closeMobileNavigation();
     });
+
+    $('.booking-sidebar__content').stick_in_parent({
+        offset_top: 15
+    });
+
+    $('[data-toggle="tooltip"]').tooltip();
+
 })(jQuery);

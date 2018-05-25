@@ -131,17 +131,18 @@ class PaypalController extends Controller {
             $appointment->customer_id = $session_data->customer_id;
             $appointment->barbercut = $session_data->senior_cut;
             $appointment->stylishcut = $session_data->junior_cut;
-            $appointment->longcut = 0;
+            // $appointment->longcut = 0;
+            $appointment->longcut = $session_data->shave_cut;
             $appointment->beardtrim = $session_data->beard_trim;
             $appointment->kidscut = $session_data->kids_cut;
             $appointment->price = $session_data->total_price;
-            $appointment->bookdate = $session_data->date.' '.$session_data->time;
+            $appointment->bookdate = $session_data->request_date.' '.$session_data->request_time;
             $appointment->status = 1;
             $appointment->destination = '0.0,0.0';
             $appointment->customer_rating = 0;
             $appointment->barber_rating = 0;
             $appointment->remark = $session_data->remarks;
-            $appointment->address = $session_data->address;
+            $appointment->address = $session_data->house_unit_no.' '.$session_data->address.' '.$session_data->postcode.' '.$session_data->city;
             $appointment->save();
             return redirect('booking/status/'.$session_data->session_id);
         }

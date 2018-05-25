@@ -1,9 +1,11 @@
+<?php $ogTitle = 'MyCut - Pricing' ?>
+<?php $ogURL = 'pricing' ?>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <title>Pricing</title>
-        <meta name="description" content="">
 
         @include('partials/head')
     </head>

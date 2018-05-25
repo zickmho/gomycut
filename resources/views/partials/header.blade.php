@@ -39,7 +39,7 @@
                         <a href="{{url('/pricing')}}">Pricing</a>
                     </li>
                     <li class="mr-5">
-                        <a href="{{url('/become-our-barber')}}">Our Barbers</a>
+                        <a href="{{url('/our-barbers')}}">Our Barbers</a>
                     </li>
                 </ul>
             </nav>

@@ -6031,6 +6031,19 @@
 		"oS": 3,
 		"uL": 1
 		},
+	"\/build\/sass\/components\/_booking.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/sass\/components\/_booking.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/build\/sass\/components\/_footer.sass": {
 		"aP": 0,
 		"bl": 0,
@@ -6066,6 +6079,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/build\/sass\/elements\/_buttons.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/build\/sass\/elements\/_forms.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/sass\/elements\/_forms.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -6118,6 +6144,19 @@
 		"ma": 0,
 		"oA": 1,
 		"oAP": "\/build\/sass\/objects\/_assets.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
+	"\/build\/sass\/objects\/_box.sass": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 2,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/build\/sass\/objects\/_box.css",
 		"oF": 0,
 		"oS": 0,
 		"uL": 1
@@ -7423,19 +7462,23 @@
 		"oT": 1,
 		"q": 100
 		},
-	"\/resources\/assets\/public\/images\/mycut-promo-video.mp4": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/resources\/assets\/public\/images\/mycut-promo-video.mp4",
-		"oF": 0
-		},
 	"\/resources\/assets\/public\/images\/mycut-web-video-small.mp4": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/resources\/assets\/public\/images\/mycut-web-video-small.mp4",
 		"oF": 0
+		},
+	"\/resources\/assets\/public\/images\/og-image.png": {
+		"ft": 32768,
+		"iS": 1153685,
+		"oA": 0,
+		"oAP": "\/resources\/assets\/public\/images\/og-image.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
 		},
 	"\/resources\/assets\/public\/images\/our-barbers.png": {
 		"ft": 32768,
@@ -7576,6 +7619,20 @@
 		"oAP": "\/resources\/lang\/en\/validation.php",
 		"oF": 0
 		},
+	"\/resources\/views\/_apply.blade.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/resources\/views\/_apply.blade.php",
+		"oF": 0
+		},
+	"\/resources\/views\/_booking.blade.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/resources\/views\/_booking.blade.php",
+		"oF": 0
+		},
 	"\/resources\/views\/_pricing.blade.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -7693,6 +7750,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/resources\/views\/terms-and-conditions.blade.php",
+		"oF": 0
+		},
+	"\/resources\/views\/thank-you.blade.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/resources\/views\/thank-you.blade.php",
 		"oF": 0
 		},
 	"\/resources\/views\/vendor\/.gitkeep": {
@@ -7819,11 +7883,25 @@
 		"oAP": "\/storage\/framework\/views\/221f2b84a8e02b599ddf2c04c9168a2d40836839.php",
 		"oF": 0
 		},
+	"\/storage\/framework\/views\/2df2fc652df08aea5b4a6810dc84f8f710b16878.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/framework\/views\/2df2fc652df08aea5b4a6810dc84f8f710b16878.php",
+		"oF": 0
+		},
 	"\/storage\/framework\/views\/42742e63614f5942d90b20c304c68694a97b9d22.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/storage\/framework\/views\/42742e63614f5942d90b20c304c68694a97b9d22.php",
+		"oF": 0
+		},
+	"\/storage\/framework\/views\/44e5507e6cf3bc6bc5bad8864f2f0526584533f6.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/framework\/views\/44e5507e6cf3bc6bc5bad8864f2f0526584533f6.php",
 		"oF": 0
 		},
 	"\/storage\/framework\/views\/64693fa81282449893b0214b30dac684375efd85.php": {
@@ -7896,11 +7974,25 @@
 		"oAP": "\/storage\/framework\/views\/bf7d7b36444cba282cbe896cbde055388b3cd60f.php",
 		"oF": 0
 		},
+	"\/storage\/framework\/views\/c6ddecdbe58c18375c88ae27db85a8bfbbbf8580.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/framework\/views\/c6ddecdbe58c18375c88ae27db85a8bfbbbf8580.php",
+		"oF": 0
+		},
 	"\/storage\/framework\/views\/c738b920b1786aa3641c78ea8c1de2615136fd82.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/storage\/framework\/views\/c738b920b1786aa3641c78ea8c1de2615136fd82.php",
+		"oF": 0
+		},
+	"\/storage\/framework\/views\/cb419e464a23b54622e87022fab62fd8caba8e81.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/framework\/views\/cb419e464a23b54622e87022fab62fd8caba8e81.php",
 		"oF": 0
 		},
 	"\/storage\/framework\/views\/cc958f6573577ecad47dc1b8717f348134410e34.php": {
@@ -7936,6 +8028,13 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/storage\/framework\/views\/f0e2af5a7ffc33b2aa87b98ed3292c0444b9265c.php",
+		"oF": 0
+		},
+	"\/storage\/framework\/views\/f482e17052c9f37fc483708549ed7567708a4428.php": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 0,
+		"oAP": "\/storage\/framework\/views\/f482e17052c9f37fc483708549ed7567708a4428.php",
 		"oF": 0
 		},
 	"\/storage\/framework\/views\/f58168fb90f2c4bfefccf2fa42ce7de8cdfba456.php": {
@@ -8042,6 +8141,17 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/upload\/barber\/profile\/244b55fb16ffcaa41cf6cd67727e5ade.jpg": {
+		"ft": 16384,
+		"iS": 85305,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/upload\/barber\/profile\/244b55fb16ffcaa41cf6cd67727e5ade.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/upload\/barber\/profile\/3\/26a70d0c55c4a35df756e3d0f65fb98f.jpg": {
 		"ft": 16384,
 		"iS": 3408,
@@ -8075,12 +8185,67 @@
 		"opt": 0,
 		"q": 100
 		},
+	"\/upload\/barber\/profile\/a6d878e5c983215418592e64a0a61bf5.jpg": {
+		"ft": 16384,
+		"iS": 85305,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/upload\/barber\/profile\/a6d878e5c983215418592e64a0a61bf5.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/barber\/profile\/b6f7f190bf0c8415d3ce0f6937df3327.jpg": {
+		"ft": 16384,
+		"iS": 43971,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/upload\/barber\/profile\/b6f7f190bf0c8415d3ce0f6937df3327.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/barber\/profile\/e362462af32f0805baa01e121def5d26.jpg": {
+		"ft": 16384,
+		"iS": 3865003,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/upload\/barber\/profile\/e362462af32f0805baa01e121def5d26.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/barber\/profile\/f0f88c64d6b76393a6a5a713a7e284f1.jpg": {
+		"ft": 16384,
+		"iS": 150220,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/upload\/barber\/profile\/f0f88c64d6b76393a6a5a713a7e284f1.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
 	"\/upload\/barber\/profile\/f47eaf52fa6995a2b4b432f9e37e4e99.jpg": {
 		"ft": 16384,
 		"iS": 1345022,
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/upload\/barber\/profile\/f47eaf52fa6995a2b4b432f9e37e4e99.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"q": 100
+		},
+	"\/upload\/barber\/profile\/f7635ba5f4f5c7a622af89fb19408a04.jpg": {
+		"ft": 16384,
+		"iS": 85305,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/upload\/barber\/profile\/f7635ba5f4f5c7a622af89fb19408a04.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,

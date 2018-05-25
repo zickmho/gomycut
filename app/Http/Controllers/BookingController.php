@@ -88,8 +88,10 @@ class BookingController extends Controller {
         $TWILIO_SENDERPHONE = '+1 267-331-4820';
         $verify_code = rand(1000, 9999);
         $message = 'Your Mycut verification code is: '.$verify_code;
-        $request->session()->set('phone', $verify_code);
-        $request->session()->set('title', $request['title']);
+        // $request->session()->set('phone', $verify_code);
+        $request->session()->set('verify_code', $verify_code);
+        $request->session()->set('phone', $phoneNo);
+        // $request->session()->set('title', $request['title']);
         $request->session()->set('name', $request['name']);
         $request->session()->set('email', $request['email']);
 
@@ -123,7 +125,9 @@ class BookingController extends Controller {
     public function verifyCode(Request $request) {
         $phoneNo = $request['phoneNo'];
         $verify_code = $request['verifyCode'];
-        $session_code = $request->session()->get('phone');
+        // $session_code = $request->session()->get('phone');
+        $session_code = $request->session()->get('verify_code');
+
         //Session::forget('phone');
         if ($verify_code == $session_code) {
             $session_data = SessionBooking::where('session_id', '=', $request->session()->getId())->first();
@@ -132,7 +136,7 @@ class BookingController extends Controller {
                     'session_id' => $request->session()->getId(),
                 ]);
             }
-            $session_data->contact_title = $request->session()->get('title');
+            // $session_data->contact_title = $request->session()->get('title');
             $session_data->name = $request->session()->get('name');
             $session_data->email = $request->session()->get('email');
             $session_data->phone = $request->session()->get('phone');
@@ -147,12 +151,13 @@ class BookingController extends Controller {
     }
 
     public function request_booking(Request $request) {
-        $type_senior = $request['service-type-senior'];
-        $type_junior = $request['service-type-junior'];
-        $type_beard = $request['service-type-beard'];
-        $type_kids = $request['service-type-kids'];
+        // $type_senior = $request['service-type-senior'];
+        // $type_junior = $request['service-type-junior'];
+        // $type_beard = $request['service-type-beard'];
+        // $type_kids = $request['service-type-kids'];
         $senior_cnt = $request['senior-count'];
         $junior_cnt = $request['junior-count'];
+        $shave_cnt = $request['shave-count'];
         $beard_cnt = $request['beard-count'];
         $kids_cnt = $request['kids-count'];
         $city = $request['city'];
@@ -174,6 +179,7 @@ class BookingController extends Controller {
         }
         $session_data->senior_cut = $senior_cnt;
         $session_data->junior_cut = $junior_cnt;
+        $session_data->shave_cut = $shave_cnt;
         $session_data->beard_trim = $beard_cnt;
         $session_data->kids_cut = $kids_cnt;
         $session_data->city = $city;

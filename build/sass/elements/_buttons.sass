@@ -7,18 +7,25 @@
 
 .btn-lg
     font-size: 1.15rem
-    
+
 .btn-primary
     background-color: $button-primary-fill
     border: 3px solid $button-primary-border
     color: $dark-400
     font-weight: 800
 
-    &:hover,
-    &:focus,
-    &:active
-        background-color: $button-primary-fill-hover
-        border: 3px solid $button-primary-border-hover
+    &:hover:not(:disabled),
+    &:focus:not(:disabled),
+    &:active:not(:disabled)
+        background-color: $button-primary-fill-hover !important
+        border: 3px solid $button-primary-border-hover !important
+        color: $dark-400 !important
+        box-shadow: none !important
+
+    &:disabled,
+    &.disabled
+        background-color: $button-primary-fill
+        border-color: $button-primary-border
         color: $dark-400
 
 .btn-secondary

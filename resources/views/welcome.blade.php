@@ -1,9 +1,11 @@
+<?php $ogTitle = 'MyCut - Skip the queue, get your haircut done at your place' ?>
+<?php $ogURL = '' ?>
+
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
         <title>Go MyCut</title>
-        <meta name="description" content="">
 
         @include('partials/head')
     </head>
@@ -17,7 +19,7 @@
                     <h1 class="text-uppercase  text-center  text-white">Skip The Barbershop</h1>
                     <p class="text-center mb-5">Our premium & profesional barbers come to your home, office or wherever life takes you</p>
                     <div class="hero-action">
-                        <a href="#" class="btn  btn-primary">
+                        <a href="{{url('/booking')}}" class="btn  btn-primary">
                             Book your session now
                         </a>
                         <!-- <div class="action-divider  mt-4  mb-4  text-center  text-white">
@@ -51,7 +53,7 @@
                     <div class="col-md-4  mb-5  pl-4  pr-4">
                         <div class="hows-sprites  how-sprites--location  mb-5  mx-auto"></div>
                         <h3 class="text-center">Tell Us When & Where</h3>
-                        <p class="text-center">Your barber will confirm your booking and travel to your location within 30 mins</p>
+                        <p class="text-center">Your barber will confirm your booking and travel to your location within 4 hours</p>
                     </div>
                     <div class="col-md-4  mb-5  pl-4  pr-4">
                         <div class="hows-sprites  how-sprites--relax  mb-5  mx-auto"></div>
@@ -118,7 +120,7 @@
                     <div class="col-md-5  our-barbers-content">
                         <h3 class="mb-4  mt-3">Meet our Experienced & Skillful Barber</h3>
                         <p class="mb-4">Our selected MyCut barbers has gone through background checking with us and very experienced and skillful. Plus they are very friendly too. Our barbers team are currently growing.</p>
-                        <a href="#" class="btn  btn-outline-primary">View our stylists profile</a>
+                        <a href="{{url('/our-barbers')}}" class="btn  btn-outline-primary">View our stylists profile</a>
                     </div>
                 </div>
             </div>

@@ -1,13 +1,17 @@
-<head>
-    <meta charset="utf-8">
-    <title>Our Barbers</title>
-    <meta name="description" content="">
+<?php $ogTitle = 'MyCut - Our Barbers' ?>
+<?php $ogURL = 'our-barbers' ?>
 
-    @include('partials/head')
-</head>
-<body>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Our Barbers</title>
 
-    @include('partials/header')
+        @include('partials/head')
+    </head>
+    <body>
+
+        @include('partials/header')
 
         <section class="page-banner  homecut-collage  text-center">
             <div class="container">
@@ -120,7 +124,7 @@
                     <p class="text-left  font-italic">We’re honored to partner with some of the best barbers in the country.</p>
                 </div>
                 <div>
-                    <a href="#" class="btn btn-lg  btn-outline-secondary">Join our barber team</a>
+                    <a href="{{url('/become-our-barber')}}" class="btn btn-lg  btn-outline-secondary">Join our barber team</a>
                 </div>
             </div>
         </section>

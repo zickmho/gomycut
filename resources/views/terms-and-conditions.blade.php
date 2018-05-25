@@ -1,13 +1,15 @@
+<?php $ogTitle = 'MyCut - Terms and Conditions' ?>
+<?php $ogURL = 'terms-and-conditions' ?>
+
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Terms and Condition</title>
-    <meta name="description" content="">
+    <head>
+        <meta charset="utf-8">
+        <title>Terms and Condition</title>
 
-    @include('partials/head')
+        @include('partials/head')
 
-</head>
+    </head>
     <body>
 
         @include('partials/header')

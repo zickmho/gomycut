@@ -1,5 +1,54 @@
+
+
 .container-small
     max-width: 900px
 
 .container-x-small
     max-width: 500px
+
+
+.row.row-xs
+    margin-left: -$spacing-sm
+    margin-right: -$spacing-sm
+
+    > [class*="col-"]
+        padding-left: $spacing-sm
+        padding-right: $spacing-sm
+
+.tooltip
+    font-size: $font-7-size !important
+
+.tooltip-inner
+    background-color: $dark-200
+    max-width: 160px
+    padding-top: 12px
+    padding-bottom: 12px
+
+.bs-tooltip-top .arrow::before, .bs-tooltip-auto[x-placement^="top"] .arrow::before
+    border-top-color: $dark-200
+
+.jconfirm .jconfirm-box div.jconfirm-title-c
+    padding-right: 25px
+
+.input-code
+    line-height: 2
+    height: 60px
+    font-size: 30px
+    letter-spacing: 16px
+    font-weight: 800
+
+.contact-information__form .intl-tel-input
+    width: 100%
+
+.jconfirm .jconfirm-box .jconfirm-buttons button
+    border: 0 !important
+
+.jconfirm-content .summary-service ul
+    padding-left: 0
+
+    > li:not(.active)
+        display: none !important
+
+#subtotal,
+#discount
+    display: none

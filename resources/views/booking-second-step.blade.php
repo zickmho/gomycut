@@ -216,6 +216,11 @@
                                             <td>0</td>
                                             <td class="last">RM 0</td>
                                         </tr>
+                                        <tr class="shave">
+                                            <td>Shave & Shape</td>
+                                            <td>0</td>
+                                            <td class="last">RM 0</td>
+                                        </tr>
                                         <tr class="beard">
                                             <td>Beard Trim</td>
                                             <td>0</td>
@@ -343,7 +348,7 @@
 
     function InputPrices(session_data) {
         var booking_table = document.getElementById('booking-details');
-        for(var i = 0; i < 4; i++) {
+        for(var i = 0; i < 5; i++) {
             var targetItem = booking_table.rows[i];
             var countCell = targetItem.cells[1];
             var priceCell = targetItem.cells[2];
@@ -355,11 +360,14 @@
                 countCell.innerHTML = session_data.junior_cut;
                 priceCell.innerHTML = 'RM ' + (price * 90);
             } else if (i == 2) {//40
+                countCell.innerHTML = session_data.shave_cut;
+                priceCell.innerHTML = 'RM ' + (price * 70);
+            } else if (i == 3) {//40
                 countCell.innerHTML = session_data.beard_trim;
-                priceCell.innerHTML = 'RM ' + (price * 40);
-            } else if (i == 3) {//50
-                countCell.innerHTML = session_data.kids_cut;
                 priceCell.innerHTML = 'RM ' + (price * 50);
+            } else if (i == 4) {//50
+                countCell.innerHTML = session_data.kids_cut;
+                priceCell.innerHTML = 'RM ' + (price * 70);
             }
         }
 

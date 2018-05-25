@@ -1,13 +1,15 @@
+<?php $ogTitle = 'MyCut - Privacy Policy' ?>
+<?php $ogURL = 'privacy-policy' ?>
+
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset="utf-8">
-    <title>Terms and Condition</title>
-    <meta name="description" content="">
+    <head>
+        <meta charset="utf-8">
+        <title>Privacy Policy</title>
 
-    @include('partials/head')
+        @include('partials/head')
 
-</head>
+    </head>
     <body>
 
         @include('partials/header')

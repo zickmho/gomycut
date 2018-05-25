@@ -24,10 +24,10 @@ class ApplyController extends Controller
         //echo('</pre>');
 
         $first_name = $request->input('first_name');
-        $last_name = $request->input('last_name');
+        // $last_name = $request->input('last_name');
         $email = $request->input('email');
-        $password = $request->input('password');
-        $country_code = $request->input('country_code');
+        // $password = $request->input('password');
+        // $country_code = $request->input('country_code');
         $phone = $request->input('phone');
         $city = $request->input('city');
         $pin_code = $request->input('pin_code');
@@ -49,9 +49,9 @@ class ApplyController extends Controller
         */
         $count = Barber::where('email', $email)->count();
         if ( $count > 0 ){
-            return redirect('/apply')->with(
+            return redirect('/become-our-barber')->with(
                 'duplicate',
-                'Your Email address is already registered.'
+                'Sorry, your email address is already send for registration.'
             );
         }
 
@@ -59,8 +59,8 @@ class ApplyController extends Controller
         $barber->api_token = md5(rand().date('l jS \of F Y h:i:s A'));
         $barber->email = $email;
         $barber->firstname = $first_name;
-        $barber->lastname = $last_name;
-        $barber->password = $password;
+        // $barber->lastname = $last_name;
+        // $barber->password = $password;
         $barber->phone = $phone;
         $barber->city = $city;
         $barber->pincode = $pin_code;
@@ -77,14 +77,15 @@ class ApplyController extends Controller
         $barber->save();
 
         \App\User::create([
-            'name' => $last_name.' '.$first_name,
+            // 'name' => $last_name.' '.$first_name,
+            'name' => $first_name,
             'email' => $email,
-            'password' => bcrypt($password),
+            // 'password' => bcrypt($password),
             'role' => 1,    //barber
         ]);
 
         //return redirect('/');
-        return redirect('/')->with(
+        return redirect('/thank-you')->with(
             'message',
             'Your request has been sent successfully. MyCut will contact you as soon as possible.'
         );
