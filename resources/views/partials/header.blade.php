@@ -50,7 +50,7 @@
             </div>
             <a href="{{url('/')}}" class="logo-main">
                 <div class="logo-wrapper">
-                    <img src="resources/assets/public/images/logo-mycut.png" alt="mycut logo" class="img-fluid">
+                    <img src="/resources/assets/public/images/logo-mycut.png" alt="mycut logo" class="img-fluid">
                 </div>
             </a>
             <nav class="nav-right  u-left-auto">

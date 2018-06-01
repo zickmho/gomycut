@@ -28,6 +28,29 @@
         border-color: $button-primary-border
         color: $dark-400
 
+.btn-primary-green
+    background-color: $button-primary-green-fill
+    border: 3px solid $button-primary-green-border
+    box-shadow: $button-primary-green-shadow
+    color: $white
+    font-weight: 800
+
+    &:hover:not(:disabled),
+        background-color: darken($button-primary-green-fill, 5) !important
+        border: 3px solid darken($button-primary-green-border, 5) !important
+        color: $white !important
+
+    &:focus:not(:disabled),
+    &:active:not(:disabled)
+        background-color: $button-primary-green-fill !important
+        border: 3px solid $button-primary-green-border !important
+        box-shadow: $button-primary-green-shadow
+
+    &:disabled,
+    &.disabled        
+        background-color: $button-primary-green-fill !important
+        border: 3px solid $button-primary-green-border !important
+
 .btn-secondary
     background-color: $dark !important
     color: $white

@@ -13,7 +13,7 @@
 <meta name="og:locale" content="en_US">
 <meta name="theme-color" content="#191613">
 
-<link rel="stylesheet" href="resources/assets/public/css/app.min.css">
+<link rel="stylesheet" href="/resources/assets/public/css/app.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.6/compressed/themes/classic.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.6/compressed/themes/classic.date.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/pickadate.js/3.5.6/compressed/themes/classic.time.css">

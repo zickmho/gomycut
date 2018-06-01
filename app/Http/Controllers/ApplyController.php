@@ -87,7 +87,7 @@ class ApplyController extends Controller
         //return redirect('/');
         return redirect('/thank-you')->with(
             'message',
-            'Your request has been sent successfully. MyCut will contact you as soon as possible.'
+            'Thank you. Your request has been sent successfully. MyCut will review your information and arrange for interview session if you get shortlisted.'
         );
     }
 

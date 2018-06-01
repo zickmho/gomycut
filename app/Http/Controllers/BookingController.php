@@ -123,6 +123,7 @@ class BookingController extends Controller {
     }
 
     public function verifyCode(Request $request) {
+        $input = $request->input();
         $phoneNo = $request['phoneNo'];
         $verify_code = $request['verifyCode'];
         // $session_code = $request->session()->get('phone');
@@ -137,13 +138,25 @@ class BookingController extends Controller {
                 ]);
             }
             // $session_data->contact_title = $request->session()->get('title');
-            $session_data->name = $request->session()->get('name');
-            $session_data->email = $request->session()->get('email');
+            $session_data->name = $name = $request->session()->get('name');
+            $session_data->email = $email = $request->session()->get('email');
             $session_data->phone = $request->session()->get('phone');
-            if (Auth::check()) {
-                $user = Auth::user();
-                $session_data->customer_id = $user->id;
+
+            if (!$user = User::where('email', $email)->first()) {
+                $user = new User;
+                $user->name = $name;
+                $user->email = $email;
+                $user->role = 2;
+                $user->save();
             }
+
+            $session_data->customer_id = $user->id;
+
+
+            // if (Auth::check()) {
+            //     $user = Auth::user();
+            //     $session_data->customer_id = $user->id;
+            // }
             $session_data->save();
             return response('1');
         }

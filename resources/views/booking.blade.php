@@ -234,7 +234,7 @@
                                         </div>
                                     </div>
                                     <div id="btn-verify-number" class="form-group  mt-2  mb-2">
-                                        <button type="submit" class="btn mb-2 btn-primary  btn-block">Verify My Number</button>
+                                        <button type="submit" class="btn mb-2 btn-primary-green  btn-block">Verify My Number</button>
                                         <small class="text-muted">Before proceed with booking, we require your mobile number to be verify. 4 digits number will be send to your phone</small>
                                     </div>
 
@@ -242,108 +242,110 @@
                             </form>
                         </div>
 
-                        <!-- address information -->
-                        <div class="second-view  address-information  box  mb-3" style="display: none;">
+                        <form id="second-step-booking" data-parsley-validate>
+                            <!-- address information -->
+                            <div class="second-view  address-information  box  mb-3" style="display: none;">
 
-                            <div class="box-heading">
-                                <h4 class="box-heading-title  u-no-letter-spacing">Address Information</h4>
-                                <p class="box-heading-subtitle  text-muted">Tell us where you want us to send our barber</p>
-                            </div>
+                                <div class="box-heading">
+                                    <h4 class="box-heading-title  u-no-letter-spacing">Address Information</h4>
+                                    <p class="box-heading-subtitle  text-muted">Tell us where you want us to send our barber</p>
+                                </div>
 
-                            <div class="alert  alert-warning  u-text-6">
-                                At the meantime, our service only covers Selangor and Kuala Lumpur only
-                            </div>
+                                <div class="alert  alert-warning  u-text-6">
+                                    At the meantime, our service only covers Selangor and Kuala Lumpur only
+                                </div>
 
-                            <div class="row  row-xs">
-                                <div class="col-md-2">
-                                    <div class="form-group">
-                                        <label>Unit No</label>
-                                        <input id="unit-no" type="text" class="form-control" name="postcode" placeholder="No 44">
+                                <div class="row  row-xs">
+                                    <div class="col-md-2">
+                                        <div class="form-group">
+                                            <label>Unit No</label>
+                                            <input id="unit-no" type="text" class="form-control" name="unit-no" placeholder="No 44" required  data-parsley-required-message="Please enter unit no.">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-10">
+
+                                        <div class="form-group">
+                                            <label>Address</label>
+                                            <textarea id="street-address" class="form-control" name="address" rows="2" cols="80" placeholder="Jalan Mayang Sari P10/30" required   data-parsley-required-message="Please enter address information"></textarea>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-10">
 
-                                    <div class="form-group">
-                                        <label>Address</label>
-                                        <textarea id="street-address" class="form-control" name="address" rows="2" cols="80" placeholder="Jalan Mayang Sari P10/30"></textarea>
+                                <div class="row  row-xs">
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>Postcode</label>
+                                            <input id="postcode" type="number" class="form-control" name="postcode" placeholder="21020" required  data-parsley-required-message="Please enter postcode" data-parsley-minlength="5"  data-parsley-maxlength="5" data-parsley-minlength-message="Postcode require 5 digits" data-parsley-maxlength-message="Postcode exceeded 5 digits">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>City</label>
+                                            <input id="city" type="text" class="form-control" name="city" placeholder="Setia Alam" required  data-parsley-required-message="Please enter your city">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="form-group">
+                                            <label>State</label>
+                                            <select class="form-control" name="state" id="state" required  data-parsley-required-message="Please select state">
+                                                <option value="">Select state</option>
+                                                <option value="Selangor">Selangor</option>
+                                                <option value="Kuala Lumpur">Kuala Lumpur</option>
+                                            </select>
+                                        </div>
                                     </div>
                                 </div>
+
+
+
+
+                                <div class="form-group">
+                                    <label>Address Remarks</label>
+                                    <input id="remark" type="text" class="form-control" name="remark" value="" placeholder="Eg: Meet me at guard house">
+                                </div>
+
                             </div>
 
-                            <div class="row  row-xs">
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>Postcode</label>
-                                        <input id="postcode" type="tel" class="form-control" name="postcode" placeholder="21020">
+                            <!-- booking information -->
+                            <div class="second-view  booking-information  box  mb-3" style="display: none;">
+
+                                <div class="box-heading">
+                                    <h4 class="box-heading-title  u-no-letter-spacing">Booking Date & Time</h4>
+                                    <p class="box-heading-subtitle  text-muted">Tell us your preferred date & time of your haircut</p>
+                                </div>
+
+                                <div class="row  row-xs">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Select date</label>
+                                            <input id="datePicker" type="text" class="form-control  booking-datepicker" name="date" placeholder="Click to select date" required  data-parsley-required-message="Please select booking date">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label>Select time</label>
+                                            <input id="timePicker" type="text" class="form-control  booking-timepicker" name="time" placeholder="Click to select time" required  data-parsley-required-message="Please select booking time">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>City</label>
-                                        <input id="city" type="text" class="form-control" name="city" placeholder="Setia Alam">
-                                    </div>
+
+                                <small class="text-muted">We only accept booking for 2 days in advanced including today. Read it <a href="#">here</a> why</small>
+                            </div>
+
+                            <!-- agree policy -->
+                            <div class="second-view  terms-information  box  mb-3" style="display: none;">
+
+                                <div class="form-check  text-center  mb-4">
+                                    <!-- <input class="form-check-input" id="terms-acceptance" type="checkbox" name="" value=""> -->
+                                    <label class="form-check-label" for="terms-acceptance">By clicking book now button, I hereby agree to the <a href="/terms-and-conditions" target="_blank">Terms of Service</a> and <a href="/privacy-policy" target="_blank">Privacy Policy</a></label>
                                 </div>
-                                <div class="col-md-4">
-                                    <div class="form-group">
-                                        <label>State</label>
-                                        <select class="form-control" name="state" id="state">
-                                            <option value="">Select state</option>
-                                            <option value="Selangor">Selangor</option>
-                                            <option value="Kuala Lumpur">Kuala Lumpur</option>
-                                        </select>
-                                    </div>
-                                </div>
+
+                                <button id="btn-book-now" class="btn  btn-primary-green  btn-block" type="submit">
+                                    Book Now
+                                </button>
+
                             </div>
-
-
-
-
-                            <div class="form-group">
-                                <label>Address Remarks</label>
-                                <input id="remark" type="text" class="form-control" name="remark" value="" placeholder="Eg: Meet me at guard house">
-                            </div>
-
-                        </div>
-
-                        <!-- booking information -->
-                        <div class="second-view  booking-information  box  mb-3" style="display: none;">
-
-                            <div class="box-heading">
-                                <h4 class="box-heading-title  u-no-letter-spacing">Booking Date & Time</h4>
-                                <p class="box-heading-subtitle  text-muted">Tell us your preferred date & time of your haircut</p>
-                            </div>
-
-                            <div class="row  row-xs">
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Select date</label>
-                                        <input id="datePicker" type="text" class="form-control  booking-datepicker" name="date" placeholder="Click to select date">
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="form-group">
-                                        <label>Select time</label>
-                                        <input id="timePicker" type="text" class="form-control  booking-timepicker" name="time" placeholder="Click to select time">
-                                    </div>
-                                </div>
-                            </div>
-
-                            <small class="text-muted">We only accept booking for 2 days in advanced including today. Read it <a href="#">here</a> why</small>
-                        </div>
-
-                        <!-- agree policy -->
-                        <div class="second-view  terms-information  box  mb-3" style="display: none;">
-
-                            <div class="form-check  text-center  mb-4">
-                                <!-- <input class="form-check-input" id="terms-acceptance" type="checkbox" name="" value=""> -->
-                                <label class="form-check-label" for="terms-acceptance">By clicking book now button, I hereby agree to the <a href="/terms-and-conditions" target="_blank">Terms of Service</a> and <a href="/privacy-policy" target="_blank">Privacy Policy</a></label>
-                            </div>
-
-                            <button id="btn-book-now" class="btn  btn-primary  btn-block" type="submit">
-                                Book Now
-                            </button>
-
-                        </div>
+                        </form>
 
                     </div>
                     <div class="col-md-4  d-none  d-md-block  booking-sidebar">
@@ -400,7 +402,7 @@
                                         </div>
                                         <input type="hidden" class="amount">
                                     </li>
-                                    <li id="kids-cut" class="booking-summary d-flex" data-summary="quant[5]">
+                                    <li id="summary-kids-cut" class="booking-summary d-flex" data-summary="quant[5]">
                                         <div class="font-weight-bold">
                                             Kid's Cut
                                         </div>
@@ -578,7 +580,7 @@
                                     },
                                     verify: {
                                         text : 'Verify my number',
-                                        btnClass:'btn btn-primary',
+                                        btnClass:'btn btn-primary-green',
                                         isAjaxLoading: true,
                                         isAjax: true,
                                         action: function(e) {
@@ -654,13 +656,14 @@
                         theme:'white',
                         title : 'YOUR BOOKING SUMMARY',
                         content: main_content,
+                        bgOpacity: '.6',
                         buttons: {
                             edit: {
                                 text: 'EDIT'
                             },
                             confirm: {
                                 text: 'CONFIRM BOOKING',
-                                btnClass:'btn-primary',
+                                btnClass:'btn-primary-green',
                                 action: function () {
 
                                     $('#request-city').val($('#city').val());
@@ -679,7 +682,13 @@
                 }
 
                 $('#btn-book-now').on('click', function(){
-                    BookNow();
+
+                    $('#second-step-booking').parsley().validate();
+                    if($('#second-step-booking').parsley().isValid()) {
+                        BookNow();
+                        return false;
+                    }
+
                 })
                 $('#booking-contact').parsley();
 

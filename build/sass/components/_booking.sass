@@ -40,7 +40,8 @@
     display: inline-block
     width: 35px
     height: 35px
-    line-height: 33px
+    line-height: 22px
+    padding: 6px
     color: $white
     border-radius: 50%
     border: 2px solid $white
@@ -49,10 +50,19 @@
         border-color: $green
         background-color: $green
 
+    .done &
+        border-color: $green
+        background-color: $green
+        opacity: .7
+
 .progress-bar-step
 
     .active &
         color: $green !important
+
+    .done &
+        color: $green !important
+        opacity: .7
 
 .booking-service__row
     padding: $spacing-sm + 4 0 $spacing-sm + 4 $spacing-sm

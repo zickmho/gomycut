@@ -28,4 +28,8 @@ class SessionBooking extends Model
     protected $hidden = [
 
     ];
+
+    public function customer() {
+        return $this->hasOne('\App\Users', 'id', 'customer_id');
+    }
 }

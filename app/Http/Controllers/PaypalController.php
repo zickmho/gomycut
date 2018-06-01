@@ -28,10 +28,30 @@ use App\Models\Appointment;
 
 class PaypalController extends Controller {
     private $_api_context;
+    // private $apiContext;
+    private $mode;
+    private $client_id;
+    private $secret;
+
     public function __construct() {
+
         $paypal_conf = Config::get('paypal');
-        $this->_api_context = new ApiContext(new OAuthTokenCredential($paypal_conf['client_id'], $paypal_conf['secret']));
+        // Detect if we are running in live mode or sandbox
+        if($paypal_conf['settings']['mode'] == 'live'){
+            $this->client_id = $paypal_conf['live_client_id'];
+            $this->secret = $paypal_conf['live_secret'];
+        } else {
+            $this->client_id = $paypal_conf['sandbox_client_id'];
+            $this->secret = $paypal_conf['sandbox_secret'];
+        }
+
+        // Set the Paypal API Context/Credentials
+        $this->_api_context = new ApiContext(new OAuthTokenCredential($this->client_id, $this->secret));
         $this->_api_context->setConfig($paypal_conf['settings']);
+
+        // $paypal_conf = Config::get('paypal');
+        // $this->_api_context = new ApiContext(new OAuthTokenCredential($paypal_conf['client_id'], $paypal_conf['secret']));
+        // $this->_api_context->setConfig($paypal_conf['settings']);
     }
 
     public function payWithPaypal($id) {
@@ -79,7 +99,7 @@ class PaypalController extends Controller {
             $payment->create($this->_api_context);
         } catch (\paypal\Exception\PayPalConnectionException $ex) {
             if (\Config::get('app.debug')) {
-                \Session::put('error', 'Connection timeout');
+                \Session::put('error', 'Ops, Something went wrong. Please try book again.');
                 return redirect('booking/payment/'.$session_data->session_id);
 
             } else {
@@ -113,6 +133,7 @@ class PaypalController extends Controller {
         $session_data = SessionBooking::where('session_id', '=', $request->session()->getId())->first();
 
         Session::forget('paypal_payment_id');
+
         if (empty($request->input('PayerID')) || empty($request->input('token'))) {
             \Session::put('error', 'Payment failed');
             return redirect('booking/payment/'.$session_data->session_id);
@@ -144,6 +165,9 @@ class PaypalController extends Controller {
             $appointment->remark = $session_data->remarks;
             $appointment->address = $session_data->house_unit_no.' '.$session_data->address.' '.$session_data->postcode.' '.$session_data->city;
             $appointment->save();
+
+            $request->session()->regenerate();
+
             return redirect('booking/status/'.$session_data->session_id);
         }
 
