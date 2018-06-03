@@ -6,13 +6,13 @@
                     Our Hotline : 03-1234567
                 </li>
                 <li class="mr-2">
-                    <a href="https://www.facebook.com/MyCutMalaysia" target="_blank" class="text-white">
-                        <span class="icon icon--social-facebook"></span>
+                    <a href="https://www.facebook.com/MyCutMalaysia" target="_blank" class="text-white" title="Mycut Facebook">
+                        <span class="icon--20  zicons-facebook"></span>
                     </a>
                 </li>
                 <li class="mr-2">
-                    <a href="https://www.instagram.com/mycutmalaysia/" class="text-white" target="_blank">
-                        <span class="icon icon--social-instagram"></span>
+                    <a href="https://www.instagram.com/mycutmalaysia/" class="text-white" target="_blank" title="Mycut Instagram">
+                        <span class="icon--20  zicons-instagram"></span>
                     </a>
                 </li>
                 <!-- <li class="mr-2">

@@ -10,7 +10,7 @@ html {
 body {
     font-family: $font-base-family;
     font-size: $font-base-size;
-    line-height: $font-base-height;
+    line-height: $font-base-height + 4;
     background-color: $base-background;
 
     @include media-breakpoint-down(sm) {

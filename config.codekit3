@@ -7254,35 +7254,35 @@
 		"oAP": "\/resources\/assets\/public\/fonts\/icons\/demo.html",
 		"oF": 0
 		},
-	"\/resources\/assets\/public\/fonts\/icons\/fonts\/icomoon.eot": {
+	"\/resources\/assets\/public\/fonts\/icons\/fonts\/zicons.eot": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/resources\/assets\/public\/fonts\/icons\/fonts\/icomoon.eot",
+		"oAP": "\/resources\/assets\/public\/fonts\/icons\/fonts\/zicons.eot",
 		"oF": 0
 		},
-	"\/resources\/assets\/public\/fonts\/icons\/fonts\/icomoon.svg": {
+	"\/resources\/assets\/public\/fonts\/icons\/fonts\/zicons.svg": {
 		"ft": 2097152,
 		"miP": 0,
 		"oA": 2,
-		"oAP": "\/resources\/assets\/public\/fonts\/icons\/fonts\/icomoon.svg",
+		"oAP": "\/resources\/assets\/public\/fonts\/icons\/fonts\/zicons.svg",
 		"oF": 0,
 		"opt": 0,
 		"plM": 3758088159,
 		"prP": 0
 		},
-	"\/resources\/assets\/public\/fonts\/icons\/fonts\/icomoon.ttf": {
+	"\/resources\/assets\/public\/fonts\/icons\/fonts\/zicons.ttf": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/resources\/assets\/public\/fonts\/icons\/fonts\/icomoon.ttf",
+		"oAP": "\/resources\/assets\/public\/fonts\/icons\/fonts\/zicons.ttf",
 		"oF": 0
 		},
-	"\/resources\/assets\/public\/fonts\/icons\/fonts\/icomoon.woff": {
+	"\/resources\/assets\/public\/fonts\/icons\/fonts\/zicons.woff": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
-		"oAP": "\/resources\/assets\/public\/fonts\/icons\/fonts\/icomoon.woff",
+		"oAP": "\/resources\/assets\/public\/fonts\/icons\/fonts\/zicons.woff",
 		"oF": 0
 		},
 	"\/resources\/assets\/public\/fonts\/icons\/Read Me.txt": {
@@ -7834,34 +7834,6 @@
 		"oAP": "\/storage\/framework\/views\/.gitignore",
 		"oF": 0
 		},
-	"\/storage\/framework\/views\/025508370a7fcc168b31627ac12485a4ece31cfe.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/025508370a7fcc168b31627ac12485a4ece31cfe.php",
-		"oF": 0
-		},
-	"\/storage\/framework\/views\/05c4d9ff64425e1b41c6f4ed689f980439a718a6.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/05c4d9ff64425e1b41c6f4ed689f980439a718a6.php",
-		"oF": 0
-		},
-	"\/storage\/framework\/views\/07db12045fc97944c9b115c38ffe35b2360df7f2.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/07db12045fc97944c9b115c38ffe35b2360df7f2.php",
-		"oF": 0
-		},
-	"\/storage\/framework\/views\/1663d47c3dfff5f070f01b659108081928477138.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/1663d47c3dfff5f070f01b659108081928477138.php",
-		"oF": 0
-		},
 	"\/storage\/framework\/views\/1bab1776c921cb0e0189218662c62b0acd5feb54.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -7876,48 +7848,6 @@
 		"oAP": "\/storage\/framework\/views\/1bbc2b07c733f9eae049b5960c67e65f14bcc247.php",
 		"oF": 0
 		},
-	"\/storage\/framework\/views\/1dd4fc9f651c67498e44e0a672baaf589dd2977d.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/1dd4fc9f651c67498e44e0a672baaf589dd2977d.php",
-		"oF": 0
-		},
-	"\/storage\/framework\/views\/1de615665bdcd85dce0ea770de3cf6b06ec39cca.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/1de615665bdcd85dce0ea770de3cf6b06ec39cca.php",
-		"oF": 0
-		},
-	"\/storage\/framework\/views\/221f2b84a8e02b599ddf2c04c9168a2d40836839.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/221f2b84a8e02b599ddf2c04c9168a2d40836839.php",
-		"oF": 0
-		},
-	"\/storage\/framework\/views\/2df2fc652df08aea5b4a6810dc84f8f710b16878.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/2df2fc652df08aea5b4a6810dc84f8f710b16878.php",
-		"oF": 0
-		},
-	"\/storage\/framework\/views\/42742e63614f5942d90b20c304c68694a97b9d22.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/42742e63614f5942d90b20c304c68694a97b9d22.php",
-		"oF": 0
-		},
-	"\/storage\/framework\/views\/44e5507e6cf3bc6bc5bad8864f2f0526584533f6.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/44e5507e6cf3bc6bc5bad8864f2f0526584533f6.php",
-		"oF": 0
-		},
 	"\/storage\/framework\/views\/64693fa81282449893b0214b30dac684375efd85.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -7925,60 +7855,11 @@
 		"oAP": "\/storage\/framework\/views\/64693fa81282449893b0214b30dac684375efd85.php",
 		"oF": 0
 		},
-	"\/storage\/framework\/views\/669abf5925044eba154fe4982e95ef79f3f38cb9.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/669abf5925044eba154fe4982e95ef79f3f38cb9.php",
-		"oF": 0
-		},
-	"\/storage\/framework\/views\/6dd74bae0e47e63bbd0d053fb6acedd9860c7f34.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/6dd74bae0e47e63bbd0d053fb6acedd9860c7f34.php",
-		"oF": 0
-		},
-	"\/storage\/framework\/views\/815685dfb85e563492ff922efb62b5bdc3a573ae.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/815685dfb85e563492ff922efb62b5bdc3a573ae.php",
-		"oF": 0
-		},
 	"\/storage\/framework\/views\/866a38f954dd751304953725558d2c20a0cb059c.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/storage\/framework\/views\/866a38f954dd751304953725558d2c20a0cb059c.php",
-		"oF": 0
-		},
-	"\/storage\/framework\/views\/877abbb9d985c4a722f5961dfd85bb5895aa0ca3.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/877abbb9d985c4a722f5961dfd85bb5895aa0ca3.php",
-		"oF": 0
-		},
-	"\/storage\/framework\/views\/aa57aa074ab6a05f71df487cbbf02eb54dca68a6.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/aa57aa074ab6a05f71df487cbbf02eb54dca68a6.php",
-		"oF": 0
-		},
-	"\/storage\/framework\/views\/ae2b383c45c7a1eab23b442763410e77510d401c.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/ae2b383c45c7a1eab23b442763410e77510d401c.php",
-		"oF": 0
-		},
-	"\/storage\/framework\/views\/b8b45c0b84c60905cd2c196c09830f14e6407158.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/b8b45c0b84c60905cd2c196c09830f14e6407158.php",
 		"oF": 0
 		},
 	"\/storage\/framework\/views\/bf7d7b36444cba282cbe896cbde055388b3cd60f.php": {
@@ -7995,60 +7876,11 @@
 		"oAP": "\/storage\/framework\/views\/c6ddecdbe58c18375c88ae27db85a8bfbbbf8580.php",
 		"oF": 0
 		},
-	"\/storage\/framework\/views\/c738b920b1786aa3641c78ea8c1de2615136fd82.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/c738b920b1786aa3641c78ea8c1de2615136fd82.php",
-		"oF": 0
-		},
-	"\/storage\/framework\/views\/cb419e464a23b54622e87022fab62fd8caba8e81.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/cb419e464a23b54622e87022fab62fd8caba8e81.php",
-		"oF": 0
-		},
-	"\/storage\/framework\/views\/cc958f6573577ecad47dc1b8717f348134410e34.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/cc958f6573577ecad47dc1b8717f348134410e34.php",
-		"oF": 0
-		},
-	"\/storage\/framework\/views\/d8861ca2fa1df441596197965b636c4cf5ddc86b.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/d8861ca2fa1df441596197965b636c4cf5ddc86b.php",
-		"oF": 0
-		},
-	"\/storage\/framework\/views\/e02dfc29df6784d04a77a03300772669f71f3141.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/e02dfc29df6784d04a77a03300772669f71f3141.php",
-		"oF": 0
-		},
-	"\/storage\/framework\/views\/e11361e2010e31105670eead978ee0b55f856c05.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/e11361e2010e31105670eead978ee0b55f856c05.php",
-		"oF": 0
-		},
 	"\/storage\/framework\/views\/f0e2af5a7ffc33b2aa87b98ed3292c0444b9265c.php": {
 		"cB": 0,
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/storage\/framework\/views\/f0e2af5a7ffc33b2aa87b98ed3292c0444b9265c.php",
-		"oF": 0
-		},
-	"\/storage\/framework\/views\/f482e17052c9f37fc483708549ed7567708a4428.php": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/storage\/framework\/views\/f482e17052c9f37fc483708549ed7567708a4428.php",
 		"oF": 0
 		},
 	"\/storage\/framework\/views\/f58168fb90f2c4bfefccf2fa42ce7de8cdfba456.php": {

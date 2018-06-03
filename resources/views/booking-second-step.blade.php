@@ -23,7 +23,7 @@
                             <ul class="mb-0">
                                 <li class="done">
                                     <div class="h4 progress-bar-indicator">
-                                        <i class="icon icon--check"></i>
+                                        <i class="zicons-check-circle"></i>
                                     </div>
                                     <div class="h5 progress-bar-step  mb-0  text-white">
                                         Book A Session
@@ -117,7 +117,7 @@
 
                             <div class="box-heading mb-4">
                                 <h4 class="box-heading-title  u-no-letter-spacing  text-uppercase">Pay with Paypal</h4>
-                                <p class="box-heading-subtitle  text-muted">You may pay with credit card / paypal</p>
+                                <p class="box-heading-subtitle  text-muted">At the meantime, we only accept paypal as our payment method. If you wish to use credit card, enter your credit card information on the paypal payment later.</p>
                             </div>
 
                             <form class="form-horizontal" method="POST" id="payment-form" role="form" action="{{url('paypal')}}" >

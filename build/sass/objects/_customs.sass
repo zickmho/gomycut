@@ -49,6 +49,25 @@
     > li:not(.active)
         display: none !important
 
+.jconfirm .jconfirm-box .form-group
+    margin-bottom: .5rem
+
 #subtotal,
 #discount
     display: none
+
+.jconfirm.jconfirm-white .jconfirm-box .jconfirm-buttons button,
+ .jconfirm.jconfirm-light .jconfirm-box .jconfirm-buttons button
+    text-transform: none
+
+
+.blinking
+    animation: blink 1s ease 3 forwards
+
+@keyframes blink
+    0%
+        background-color: #ce5862
+    60%
+        background-color: #ce5862
+    100%
+        background-color: #fff

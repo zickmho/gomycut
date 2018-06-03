@@ -39,12 +39,12 @@
                 <ul class="social-links mt-3">
                     <li class="d-inline-block  mr-3">
                         <a href="https://www.facebook.com/MyCutMalaysia"  target="_blank"class="u-color  -muted">
-                            <span class="icon  icon--24  icon--social-facebook"></span>
+                            <span class="icon--24  zicons-facebook"></span>
                         </a>
                     </li>
                     <li class="d-inline-block  mr-3">
                         <a href="https://www.instagram.com/mycutmalaysia/" target="_blank">
-                            <span class="icon  icon--24  icon--social-instagram"></span>
+                            <span class="icon--24  zicons-instagram"></span>
                         </a>
                     </li>
                     <!-- <li class="d-inline-block  mr-3">

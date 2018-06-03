@@ -23,7 +23,7 @@
                             <ul class="mb-0">
                                 <li class="done">
                                     <div class="h4 progress-bar-indicator">
-                                        <i class="icon icon--check"></i>
+                                        <i class="zicons-check-circle"></i>
                                     </div>
                                     <div class="h5 progress-bar-step  mb-0  text-white">
                                         Book A Session
@@ -31,7 +31,7 @@
                                 </li>
                                 <li class="done">
                                     <div class="h4 progress-bar-indicator">
-                                        <i class="icon icon--check"></i>
+                                        <i class="zicons-check-circle"></i>
                                     </div>
                                     <div class="h5 progress-bar-step  mb-0  text-white">
                                         Make A Payment
@@ -58,7 +58,7 @@
                             </div>
 
                             <small class="text-muted pb-2 d-block">
-                                Our system will send you an email regarding the details of your booking. Our barber will get to your location based on your booking date and time provided.<br/>
+                                Our system will send you an email regarding the details of your booking. Once payment is verified, we will be contacting you to send our barber to your location based on the booking date and time provided.<br/>
                             </small>
 
                             <small class="text-muted">If you wish to cancel your booking please read our refund policy below.</small>

@@ -2,14 +2,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="robots" content="index, follow">
 <meta name="language" content="English">
-<meta name="description" content="Find and Book local barbers online and get your haircut done by getting barber to come at your place. Get your haircut done by the best barbers in Selangor and Kuala Lumpur.">
-<meta name="keywords" content="book barber online, haircut online, mobile barber, find barbers, online haircut">
+<meta name="description" content="Find and Book local barbers online and get your haircut done by getting barber to come at your place. Haircut done by the best barbers in Selangor and Kuala Lumpur.">
+<meta name="keywords" content="book barber online, haircut online, mobile barber, find barbers, online haircut, mycut, mycut malaysia">
 <meta name="og:title" content="<?= $ogTitle ?>">
 <meta name="og:type" content="Website">
 <meta name="og:url" content="www.gomycut.com/<?= $ogURL ?>">
 <meta name="og:image" content="{{url('/resources/assets/public/images/og-image.png')}}">
 <meta name="og:site_name" content="MyCut Malaysia - Get your haircut done at your place">
-<meta name="og:description" content="Find and Book local barbers online and get your haircut done by getting barber to come at your place. Get your haircut done by the best barbers in Selangor and Kuala Lumpur.">
+<meta name="og:description" content="Find and Book local barbers online and get your haircut done by getting barber to come at your place. Haircut done by the best barbers in Selangor and Kuala Lumpur.">
 <meta name="og:locale" content="en_US">
 <meta name="theme-color" content="#191613">
 

@@ -1,11 +1,11 @@
-<?php $ogTitle = 'MyCut - Skip the queue, get your haircut done at your place' ?>
+<?php $ogTitle = 'MyCut - Skip the queue, get your haircut done at your own place!' ?>
 <?php $ogURL = '' ?>
 
 <!DOCTYPE html>
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Go MyCut</title>
+        <title>My Cut Malaysia</title>
 
         @include('partials/head')
     </head>
@@ -20,7 +20,7 @@
                     <p class="text-center mb-5">Our premium & profesional barbers come to your home, office or wherever life takes you</p>
                     <div class="hero-action">
                         <a href="{{url('/booking')}}" class="btn  btn-primary">
-                            Book your session now
+                            Book your haircut session now
                         </a>
                         <!-- <div class="action-divider  mt-4  mb-4  text-center  text-white">
                             <span>or</span>
@@ -48,12 +48,12 @@
                     <div class="col-md-4  mb-5  pl-4  pr-4">
                         <div class="hows-sprites  how-sprites--services  mb-5  mx-auto"></div>
                         <h3 class="text-center">Choose your service</h3>
-                        <p class="text-center">Search your area to view available barbers near you and send your preferred barber a booking request</p>
+                        <p class="text-center">Select your preferred service on our booking section, service vary from Premium,  normal haircut, shaving and more</p>
                     </div>
                     <div class="col-md-4  mb-5  pl-4  pr-4">
                         <div class="hows-sprites  how-sprites--location  mb-5  mx-auto"></div>
                         <h3 class="text-center">Tell Us When & Where</h3>
-                        <p class="text-center">Your barber will confirm your booking and travel to your location within 4 hours</p>
+                        <p class="text-center">Let us know when and where is your location for us to send our barber. Earliest booking time is 4 hours from current time</p>
                     </div>
                     <div class="col-md-4  mb-5  pl-4  pr-4">
                         <div class="hows-sprites  how-sprites--relax  mb-5  mx-auto"></div>
@@ -66,7 +66,7 @@
 
         <section class="why-my-cut">
             <div class="container">
-                <h2 class="text-center pb-sm-5">Why MyCut is for you</h2>
+                <h2 class="text-center pb-sm-5">Why choose MyCut service?</h2>
 
                 <div class="why-wrapper pt-5">
 
@@ -105,7 +105,7 @@
                                 <img src="resources/assets/public/images/arrow-line.svg" alt="arrow">
                             </div>
                             <h3 class="mb-4">Personalize Style</h3>
-                            <p>Match with the barbers best suited for your needs by setting personal hair preferences, or search by barber to find your go-to grooming pro</p>
+                            <p>Choose the service best suited for your needs, our barber is professional and skillful enough to give you the hair looks you desire</p>
                         </div>
                     </div>
             </div>
@@ -119,7 +119,7 @@
                     </div>
                     <div class="col-md-5  our-barbers-content">
                         <h3 class="mb-4  mt-3">Meet our Experienced & Skillful Barber</h3>
-                        <p class="mb-4">Our selected MyCut barbers has gone through background checking with us and very experienced and skillful. Plus they are very friendly too. Our barbers team are currently growing.</p>
+                        <p class="mb-4">Our selected MyCut barbers has gone through background checking with us. They are experienced and skillful. Plus they are very friendly too.</p>
                         <a href="{{url('/our-barbers')}}" class="btn  btn-outline-primary">View our stylists profile</a>
                     </div>
                 </div>
@@ -131,7 +131,7 @@
                 <div class="text-center  mb-4">
                     <img src="resources/assets/public/images/user-hafizuddin.png" alt="User Testimonial" width="80" height="80">
                 </div>
-                <p class="testimonial-text  text-center  mb-4">I’m glad that now I don’t have to  que and spend most of my precious time just for getting my haircut. MyCut barbers managed to came on time and they are very friendly and skillful</p>
+                <p class="testimonial-text  text-center  mb-4">I’m glad that now I don’t have to queue and spend my precious time just for getting my haircut at hair salon. MyCut barbers managed to came on time plus they were very friendly and skillful too</p>
                 <div class="testimonial-from  text-center">
                     <div class="d-inline-block">
                         Hafizuddin, Shah Alam

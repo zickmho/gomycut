@@ -59,148 +59,153 @@
                             </div>
 
                             <div class="booking-service  my-4">
-                                <form id="booking-service-total">
 
-
-                                    <div class="booking-service__row  d-sm-flex  align-items-center">
-                                        <div class="booking-service__type">
-                                            <span class="icon  icon--info  text-muted  d-none  d-sm-inline-block  mr-2"  data-toggle="tooltip" data-placement="top" title="Have your haircut by our senior and experienced barber"></span> Premium Cut
-                                        </div>
-                                        <div class="booking-service__price">
-                                            RM150
-                                        </div>
-                                        <div class="d-sm-none  u-text-8  mt-1  text-muted">
-                                            Have your haircut by our senior and experienced barber
-                                        </div>
-                                        <div class="booking-service__total">
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
-                                                    <button class="btn  btn-outline-secondary  btn-number" type="button"  data-type="minus" data-field="quant[1]" disabled>
-                                                        <span class="icon icon--minus"></span>
-                                                    </button>
-                                                </div>
-                                                <input id="service-premium" class="form-control  input-number" type="number" name="quant[1]" min="0" max="10" value="0" data-price="150" required>
-                                                <div class="input-group-append">
-                                                    <button class="btn  btn-outline-secondary  btn-number" type="button" data-type="plus" data-field="quant[1]">
-                                                        <span class="icon icon--add"></span>
-                                                    </button>
-                                                </div>
+                                <div class="booking-service__row  d-sm-flex  align-items-center">
+                                    <div class="booking-service__type">
+                                        <span class="zicons-info  icon--16  text-muted  d-none  d-sm-inline-block  mr-2"  data-toggle="tooltip" data-placement="top" title="Have your haircut by our senior and experienced barber"></span> Premium Cut
+                                    </div>
+                                    <div class="booking-service__price">
+                                        RM150
+                                    </div>
+                                    <div class="d-sm-none  u-text-8  mt-1  text-muted">
+                                        Have your haircut by our senior and experienced barber
+                                    </div>
+                                    <div class="booking-service__total">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <button class="btn  btn-outline-secondary  btn-number" type="button"  data-type="minus" data-field="quant[1]" disabled>
+                                                    <span class="icon--16  zicons-minus"></span>
+                                                </button>
+                                            </div>
+                                            <input id="service-premium" class="form-control  input-number" type="number" name="quant[1]" min="0" max="10" value="0" data-price="150" required>
+                                            <div class="input-group-append">
+                                                <button class="btn  btn-outline-secondary  btn-number" type="button" data-type="plus" data-field="quant[1]">
+                                                    <span class="icon--16  zicons-plus"></span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
 
-                                    <div class="booking-service__row  d-sm-flex  align-items-center">
-                                        <div class="booking-service__type">
-                                            <span class="icon  icon--info  text-muted  d-none  d-sm-inline-block  mr-2"  data-toggle="tooltip" data-placement="top" title="Have your haircut by our junior yet profesional barber"></span>
-                                            Normal Cut
-                                        </div>
-                                        <div class="booking-service__price">
-                                            RM90
-                                        </div>
-                                        <div class="d-sm-none  u-text-8  mt-1  text-muted">
-                                            Have your haircut by our junior yet profesional barber
-                                        </div>
-                                        <div class="booking-service__total">
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
-                                                    <button class="btn  btn-outline-secondary  btn-number" type="button"  data-type="minus" data-field="quant[2]" disabled>
-                                                        <span class="icon icon--minus"></span>
-                                                    </button>
-                                                </div>
-                                                <input class="form-control  input-number" type="number" name="quant[2]" min="0" max="10" value="0" data-price="90" required>
-                                                <div class="input-group-append">
-                                                    <button class="btn  btn-outline-secondary  btn-number" type="button" data-type="plus" data-field="quant[2]">
-                                                        <span class="icon icon--add"></span>
-                                                    </button>
-                                                </div>
+                                <div class="booking-service__row  d-sm-flex  align-items-center">
+                                    <div class="booking-service__type">
+                                        <span class="zicons-info  icon--16  text-muted  d-none  d-sm-inline-block  mr-2"  data-toggle="tooltip" data-placement="top" title="Have your haircut by our junior yet profesional barber"></span>
+                                        Normal Cut
+                                    </div>
+                                    <div class="booking-service__price">
+                                        RM90
+                                    </div>
+                                    <div class="d-sm-none  u-text-8  mt-1  text-muted">
+                                        Have your haircut by our junior yet profesional barber
+                                    </div>
+                                    <div class="booking-service__total">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <button class="btn  btn-outline-secondary  btn-number" type="button"  data-type="minus" data-field="quant[2]" disabled>
+                                                    <span class="icon--16  zicons-minus"></span>
+                                                </button>
+                                            </div>
+                                            <input class="form-control  input-number" type="number" name="quant[2]" min="0" max="10" value="0" data-price="90" required>
+                                            <div class="input-group-append">
+                                                <button class="btn  btn-outline-secondary  btn-number" type="button" data-type="plus" data-field="quant[2]">
+                                                    <span class="icon--16  zicons-plus"></span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
 
-                                    <div class="booking-service__row  d-sm-flex  align-items-center">
-                                        <div class="booking-service__type">
-                                            <span class="icon  icon--info  text-muted  d-none  d-sm-inline-block  mr-2"  data-toggle="tooltip" data-placement="top" title="Stylish your head by customized shaved style"></span>
-                                            Shave and Shape
-                                        </div>
-                                        <div class="booking-service__price">
-                                            RM70
-                                        </div>
-                                        <div class="d-sm-none  u-text-8  mt-1  text-muted">
-                                            Stylish your head by customized shaved style
-                                        </div>
-                                        <div class="booking-service__total">
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
-                                                    <button class="btn  btn-outline-secondary  btn-number" type="button"  data-type="minus" data-field="quant[3]" disabled>
-                                                        <span class="icon icon--minus"></span>
-                                                    </button>
-                                                </div>
-                                                <input class="form-control  input-number" type="number" name="quant[3]" min="0" max="10" value="0" data-price="70" required>
-                                                <div class="input-group-append">
-                                                    <button class="btn  btn-outline-secondary  btn-number" type="button" data-type="plus" data-field="quant[3]">
-                                                        <span class="icon icon--add"></span>
-                                                    </button>
-                                                </div>
+                                <div class="booking-service__row  d-sm-flex  align-items-center">
+                                    <div class="booking-service__type">
+                                        <span class="zicons-info  icon--16  text-muted  d-none  d-sm-inline-block  mr-2"  data-toggle="tooltip" data-placement="top" title="Stylish your head by customized shaved style"></span>
+                                        Shave and Shape
+                                    </div>
+                                    <div class="booking-service__price">
+                                        RM70
+                                    </div>
+                                    <div class="d-sm-none  u-text-8  mt-1  text-muted">
+                                        Stylish your head by customized shaved style
+                                    </div>
+                                    <div class="booking-service__total">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <button class="btn  btn-outline-secondary  btn-number" type="button"  data-type="minus" data-field="quant[3]" disabled>
+                                                    <span class="icon--16  zicons-minus"></span>
+                                                </button>
+                                            </div>
+                                            <input class="form-control  input-number" type="number" name="quant[3]" min="0" max="10" value="0" data-price="70" required>
+                                            <div class="input-group-append">
+                                                <button class="btn  btn-outline-secondary  btn-number" type="button" data-type="plus" data-field="quant[3]">
+                                                    <span class="icon--16  zicons-plus"></span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
 
-                                    <div class="booking-service__row  d-sm-flex  align-items-center">
-                                        <div class="booking-service__type">
-                                            <span class="icon  icon--info  text-muted  d-none  d-sm-inline-block  mr-2"  data-toggle="tooltip" data-placement="top" title="Have your beard trim by our profesional barber"></span>
-                                            Beard Trim
-                                        </div>
-                                        <div class="booking-service__price">
-                                            RM50
-                                        </div>
-                                        <div class="d-sm-none  u-text-8  mt-1  text-muted">
-                                            Have your beard trim by our profesional barber
-                                        </div>
-                                        <div class="booking-service__total">
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
-                                                    <button class="btn  btn-outline-secondary  btn-number" type="button"  data-type="minus" data-field="quant[4]" disabled>
-                                                        <span class="icon icon--minus"></span>
-                                                    </button>
-                                                </div>
-                                                <input class="form-control  input-number" type="number" name="quant[4]" min="0" max="10" value="0" data-price="50" required>
-                                                <div class="input-group-append">
-                                                    <button class="btn  btn-outline-secondary  btn-number" type="button" data-type="plus" data-field="quant[4]">
-                                                        <span class="icon icon--add"></span>
-                                                    </button>
-                                                </div>
+                                <div class="booking-service__row  d-sm-flex  align-items-center">
+                                    <div class="booking-service__type">
+                                        <span class="zicons-info  icon--16  text-muted  d-none  d-sm-inline-block  mr-2"  data-toggle="tooltip" data-placement="top" title="Have your beard trim by our profesional barber"></span>
+                                        Beard Trim
+                                    </div>
+                                    <div class="booking-service__price">
+                                        RM50
+                                    </div>
+                                    <div class="d-sm-none  u-text-8  mt-1  text-muted">
+                                        Have your beard trim by our profesional barber
+                                    </div>
+                                    <div class="booking-service__total">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <button class="btn  btn-outline-secondary  btn-number" type="button"  data-type="minus" data-field="quant[4]" disabled>
+                                                    <span class="icon--16  zicons-minus"></span>
+                                                </button>
+                                            </div>
+                                            <input class="form-control  input-number" type="number" name="quant[4]" min="0" max="10" value="0" data-price="50" required>
+                                            <div class="input-group-append">
+                                                <button class="btn  btn-outline-secondary  btn-number" type="button" data-type="plus" data-field="quant[4]">
+                                                    <span class="icon--16  zicons-plus"></span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
+                                </div>
 
-                                    <div class="booking-service__row  d-sm-flex  align-items-center">
-                                        <div class="booking-service__type">
-                                            <span class="icon  icon--info  text-muted  d-none  d-sm-inline-block  mr-2"  data-toggle="tooltip" data-placement="top" title="For kids age 12 years old below"></span>
-                                            Kid's Cut
-                                        </div>
-                                        <div class="booking-service__price">
-                                            RM70
-                                        </div>
-                                        <div class="d-sm-none  u-text-8  mt-1  text-muted">
-                                            For kids age 12 years old below
-                                        </div>
-                                        <div class="booking-service__total">
-                                            <div class="input-group">
-                                                <div class="input-group-prepend">
-                                                    <button class="btn  btn-outline-secondary  btn-number" type="button"  data-type="minus" data-field="quant[5]" disabled>
-                                                        <span class="icon icon--minus"></span>
-                                                    </button>
-                                                </div>
-                                                <input class="form-control  input-number" type="number" name="quant[5]" min="0" max="10" value="0" data-price="70" required>
-                                                <div class="input-group-append">
-                                                    <button class="btn  btn-outline-secondary  btn-number" type="button" data-type="plus" data-field="quant[5]">
-                                                        <span class="icon icon--add"></span>
-                                                    </button>
-                                                </div>
+                                <div class="booking-service__row  d-sm-flex  align-items-center">
+                                    <div class="booking-service__type">
+                                        <span class="zicons-info  icon--16  text-muted  d-none  d-sm-inline-block  mr-2"  data-toggle="tooltip" data-placement="top" title="For kids age 12 years old below"></span>
+                                        Kid's Cut
+                                    </div>
+                                    <div class="booking-service__price">
+                                        RM70
+                                    </div>
+                                    <div class="d-sm-none  u-text-8  mt-1  text-muted">
+                                        For kids age 12 years old below
+                                    </div>
+                                    <div class="booking-service__total">
+                                        <div class="input-group">
+                                            <div class="input-group-prepend">
+                                                <button class="btn  btn-outline-secondary  btn-number" type="button"  data-type="minus" data-field="quant[5]" disabled>
+                                                    <span class="icon--16  zicons-minus"></span>
+                                                </button>
+                                            </div>
+                                            <input class="form-control  input-number" type="number" name="quant[5]" min="0" max="10" value="0" data-price="70" required>
+                                            <div class="input-group-append">
+                                                <button class="btn  btn-outline-secondary  btn-number" type="button" data-type="plus" data-field="quant[5]">
+                                                    <span class="icon--16  zicons-plus"></span>
+                                                </button>
                                             </div>
                                         </div>
                                     </div>
-                                </form>
+                                </div>
+                            </div>
+
+
+                            <div class="summary-total text-right  d-block  d-md-none  py-3">
+                                <div class="float-left">
+                                    <strong>Total</strong>
+                                </div>
+                                <div id="total">RM <span class="total">0</span></div>
                             </div>
 
                         </div>
@@ -318,24 +323,38 @@
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Select date</label>
-                                            <input id="datePicker" type="text" class="form-control  booking-datepicker" name="date" placeholder="Click to select date" required  data-parsley-required-message="Please select booking date">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text">
+                                                        <span class="zicons-calendar"></span>
+                                                    </div>
+                                                </div>
+                                                <input id="datePicker" type="text" class="form-control  booking-datepicker" name="date" placeholder="Click to select date" required  data-parsley-required-message="Please select booking date" data-parsley-group="datepicker">
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
                                             <label>Select time</label>
-                                            <input id="timePicker" type="text" class="form-control  booking-timepicker" name="time" placeholder="Click to select time" required  data-parsley-required-message="Please select booking time">
+                                            <div class="input-group">
+                                                <div class="input-group-prepend">
+                                                    <div class="input-group-text">
+                                                        <span class="zicons-clock"></span>
+                                                    </div>
+                                                </div>
+                                                <input id="timePicker" disabled type="text" class="form-control  booking-timepicker" name="time" placeholder="Click to select time" required  data-parsley-required-message="Please select booking time" data-parsley-group="timepicker">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
 
-                                <small class="text-muted">We only accept booking for 2 days in advanced including today. Read it <a href="#">here</a> why</small>
+                                <small class="text-muted">We only accept booking for 2 days in advanced including today. Earliest booking time available is 4 hours from current time</small>
                             </div>
 
                             <!-- agree policy -->
                             <div class="second-view  terms-information  box  mb-3" style="display: none;">
 
-                                <div class="form-check  text-center  mb-4">
+                                <div class="form-check  pl-0  mb-4">
                                     <!-- <input class="form-check-input" id="terms-acceptance" type="checkbox" name="" value=""> -->
                                     <label class="form-check-label" for="terms-acceptance">By clicking book now button, I hereby agree to the <a href="/terms-and-conditions" target="_blank">Terms of Service</a> and <a href="/privacy-policy" target="_blank">Privacy Policy</a></label>
                                 </div>
@@ -466,7 +485,7 @@
             </div>
         </section>
 
-        <form id="confirm-request" action="{{url('request-booking')}}" method="post" style="">
+        <form id="confirm-request" action="{{url('request-booking')}}" method="post" style="display:none;">
             {!! csrf_field() !!}
             <!-- <input name="service-type-senior" id="request-service-type-senior">
             <input name="service-type-junior" id="request-service-type-junior">
@@ -504,17 +523,83 @@
 
                 $('.booking-datepicker').pickadate({
                     min: true,
-                    max: 1,
+                    max: 2,
                     formatSubmit: 'yyyy-mm-dd',
-                    hiddenName: true
+                    hiddenName: true,
+                    onSet: function(){
+                        $('#second-step-booking').parsley().validate('datepicker')
+                    }
                 });
 
-                $('.booking-timepicker').pickatime({
+                var bookingTime = $('.booking-timepicker').pickatime({
                     min: [7,30],
                     max: [23,30],
+                    interval: 15,
                     formatSubmit: 'HH:i',
-                    hiddenName: true
+                    hiddenName: true,
+                    onSet: function(){
+                        $('#second-step-booking').parsley().validate('timepicker')
+                    }
                 });
+
+                var timePicker = bookingTime.pickatime('picker');
+
+                $('.booking-datepicker').on('change', function(){
+
+                    timePicker.set('clear');
+
+                    if($(this).val() != '') {
+                        $('#timePicker').removeAttr('disabled');
+                    }
+                    else {
+                        $('#timePicker').attr('disabled',true);
+                    }
+
+
+                    var currentHours = parseInt(new Date().getHours());
+                    var currentMinutes = parseInt(new Date().getMinutes());
+
+                    var thisDate = $('input[type="hidden"][name="date"]').val();
+
+                    var date = new Date();
+                    var month = date.getMonth()+1;
+                    var day = date.getDate();
+
+                    var output = date.getFullYear() + '-' +
+                        ((''+month).length<2 ? '0' : '') + month + '-' +
+                        ((''+day).length<2 ? '0' : '') + day;
+
+                    // check if selected date = todays date - disable booking from +4h from current time
+                    if(thisDate == output) {
+
+                        // if try to book during 8pm onwards disable the time
+                        if(currentHours >= 20) {
+                            timePicker.set('min', [00,00]);
+                            timePicker.set('max', [00,00]);
+                            timePicker.set('disable', [00,00]);
+                        }
+                        // if try to book minutes over 31, hours available is 5 hours onwards
+                        else if(currentMinutes >= 31) {
+                            timePicker.set('min', [currentHours + 5,00]);
+                            timePicker.set('max',[23,30]);
+                            timePicker.set('disable', false);
+                        }
+                        // else, hours available is 4 hours onwards
+                        else {
+                            timePicker.set('min', [currentHours + 4,00]);
+                            timePicker.set('max',[23,30]);
+                            timePicker.set('disable', false);
+                        }
+                    }
+                    // other than today
+                    else {
+                        timePicker.set('disable', false);
+                        timePicker.set('min',[7,30]);
+                        timePicker.set('max',[23,30]);
+                    }
+
+                });
+
 
                 $('.booking-datepicker, .booking-timepicker').on('change',function(){
                     $('#request-date').val($('input[type="hidden"][name="date"]').val());
@@ -579,7 +664,7 @@
                                         }
                                     },
                                     verify: {
-                                        text : 'Verify my number',
+                                        text : 'Verify number',
                                         btnClass:'btn btn-primary-green',
                                         isAjaxLoading: true,
                                         isAjax: true,
@@ -683,6 +768,20 @@
 
                 $('#btn-book-now').on('click', function(){
 
+                    if($('input[name="quant[1]"]').val() == '0' && $('input[name="quant[2]"]').val() == '0' && $('input[name="quant[3]"]').val() == '0' && $('input[name="quant[4]"]').val() == '0' && $('input[name="quant[5]"]').val() == '0') {
+                        alert('Ops, seems like your forget to choose service. Please choose any services by clicking (+) button');
+                        $('html,body').animate({
+                            scrollTop: $('.service-required').offset().top - 50
+                        });
+                        $('.service-required').addClass('blinking');
+
+                        setTimeout(function(){
+                            $('.service-required').removeClass('blinking');
+                        },4000);
+
+                        return false;
+                    }
+
                     $('#second-step-booking').parsley().validate();
                     if($('#second-step-booking').parsley().isValid()) {
                         BookNow();
@@ -703,13 +802,6 @@
                         return false;
                     }
                 });
-                // $.alert({
-                //     title: 'Alert!',
-                //     content: 'Simple alert!',
-                //     columnClass: 'medium',
-                //     theme: 'light'
-                // });
-
 
 
                 $('.btn-number').click(function(e){
