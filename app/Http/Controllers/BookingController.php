@@ -24,11 +24,16 @@ use App\User;
 use Session;
 
 class BookingController extends Controller {
+
+
     public function index(Request $request)
     {
         $session_data = SessionBooking::where('session_id', '=', $request->session()->getId())->first();
+        if (!$session_data) {
+            $session_data = new SessionBooking;
+        }
         return view('booking', [
-            'session_data' => $session_data
+            'session_data' => $session_data,
         ]);
     }
 
@@ -83,8 +88,10 @@ class BookingController extends Controller {
     {
         $phoneNo = $request['phoneNo'];
         //$phoneNo = '+8613039082005';
-        $TWILIO_SID = 'ACbbfb5824ac1b51fb4378bfb4a6b70c03';
-        $TWILIO_TOKEN = 'a79e790781552d93663b4f47dc395981';
+        // $TWILIO_SID = 'ACbbfb5824ac1b51fb4378bfb4a6b70c03';
+        // $TWILIO_TOKEN = 'a79e790781552d93663b4f47dc395981';
+        $TWILIO_SID = 'ACd994c33b939dd3d93c5c29b546407811';
+        $TWILIO_TOKEN = '6cf305b6e9410d16401d625220dc9967';
         $TWILIO_SENDERPHONE = '+1 267-331-4820';
         $verify_code = rand(1000, 9999);
         $message = 'Your Mycut verification code is: '.$verify_code;
@@ -164,19 +171,21 @@ class BookingController extends Controller {
     }
 
     public function request_booking(Request $request) {
-        // $type_senior = $request['service-type-senior'];
-        // $type_junior = $request['service-type-junior'];
-        // $type_beard = $request['service-type-beard'];
-        // $type_kids = $request['service-type-kids'];
-        $senior_cnt = $request['senior-count'];
-        $junior_cnt = $request['junior-count'];
-        $shave_cnt = $request['shave-count'];
-        $beard_cnt = $request['beard-count'];
-        $kids_cnt = $request['kids-count'];
+
+        $senior_cut = $request['senior-count'];
+        $junior_cut = $request['junior-count'];
+        $shave_cut = $request['shave-count'];
+        $beard_cut = $request['beard-count'];
+        $kids_cut = $request['kids-count'];
+
+        $name = $request['name'];
+        $email = $request['email'];
+        $mobile = $request['phone'];
         $city = $request['city'];
         $postcode = $request['postcode'];
         $house_unit_no = $request['house-unit-no'];
         $address = $request['address'];
+        $state = $request['state'];
         $remark = $request['remark'];
         $date = $request['date'];
         $time = $request['time'];
@@ -184,19 +193,39 @@ class BookingController extends Controller {
         $price = $request['price'];
         $discount = $request['discount'];
 
+        // $session_data->name = $name = $request->session()->get('name');
+        // $session_data->email = $email = $request->session()->get('email');
+        // $session_data->phone = $request->session()->get('phone');
+
         $session_data = SessionBooking::where('session_id', '=', $request->session()->getId())->first();
         if (!$session_data) {
             $session_data = SessionBooking::create([
                 'session_id' => $request->session()->getId(),
             ]);
         }
-        $session_data->senior_cut = $senior_cnt;
-        $session_data->junior_cut = $junior_cnt;
-        $session_data->shave_cut = $shave_cnt;
-        $session_data->beard_trim = $beard_cnt;
-        $session_data->kids_cut = $kids_cnt;
+
+        if (!$user = User::where('email', $email)->first()) {
+            $user = new User;
+            $user->name = $name;
+            $user->email = $email;
+            $user->role = 2;
+            $user->save();
+        }
+
+        $session_data->customer_id = $user->id;
+
+        $session_data->senior_cut = $senior_cut;
+        $session_data->junior_cut = $junior_cut;
+        $session_data->shave_cut = $shave_cut;
+        $session_data->beard_trim = $beard_cut;
+        $session_data->kids_cut = $kids_cut;
+
+        $session_data->name = $name;
+        $session_data->email = $email;
+        $session_data->phone = $mobile;
         $session_data->city = $city;
         $session_data->postcode = $postcode;
+        $session_data->state = $state;
         $session_data->house_unit_no = $house_unit_no;
         $session_data->address = $address;
         $session_data->remarks = $remark;

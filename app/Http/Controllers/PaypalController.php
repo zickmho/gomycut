@@ -55,14 +55,18 @@ class PaypalController extends Controller {
     }
 
     public function payWithPaypal($id) {
+
         //return view('paywithpaypal');
         $session_data = SessionBooking::where('session_id', '=', $id)->first();
+        // dd($session_data->toArray());
+
         return view('booking-second-step', [
             'session_data' => $session_data
         ]);
     }
 
     public function postPaymentWithpaypal(Request $request) {
+
         $payer = new Payer();
         $payer->setPaymentMethod('paypal');
         $session_data = SessionBooking::where('session_id', '=', $request->session()->getId())->first();
@@ -135,8 +139,9 @@ class PaypalController extends Controller {
         Session::forget('paypal_payment_id');
 
         if (empty($request->input('PayerID')) || empty($request->input('token'))) {
+            // dd('sadas 111');
             \Session::put('error', 'Payment failed');
-            return redirect('booking/payment/'.$session_data->session_id);
+            return redirect('booking/payment/'.$session_data->session_id);//->withErrors(['Payment failed']);
         }
         $payment = Payment::get($payment_id, $this->_api_context);
 
@@ -146,14 +151,15 @@ class PaypalController extends Controller {
         $result = $payment->execute($execution, $this->_api_context);
 
         if ($result->getState() == 'approved') {
-            \Session::put('success', 'Payment success');
+
             $appointment = new Appointment();
             $appointment->barber_id = 0;
+            $appointment->booking_id = $session_data->id;
             $appointment->customer_id = $session_data->customer_id;
             $appointment->barbercut = $session_data->senior_cut;
-            $appointment->stylishcut = $session_data->junior_cut;
+            $appointment->juniorcut = $session_data->junior_cut;
             // $appointment->longcut = 0;
-            $appointment->longcut = $session_data->shave_cut;
+            $appointment->shavecut = $session_data->shave_cut;
             $appointment->beardtrim = $session_data->beard_trim;
             $appointment->kidscut = $session_data->kids_cut;
             $appointment->price = $session_data->total_price;
@@ -171,7 +177,6 @@ class PaypalController extends Controller {
             return redirect('booking/status/'.$session_data->session_id);
         }
 
-        \Session::put('error', 'Payment failed');
-        return redirect('booking/payment/'.$session_data->session_id);
+        return redirect('booking/payment/'.$session_data->session_id)->withErrors(['Payment failed']);
     }
 }

@@ -3,7 +3,7 @@
         <div class="container">
             <ul class="p-2 d-flex  mb-0  justify-content-end  align-items-center">
                 <li class="mr-4">
-                    Our Hotline : 03-1234567
+                    Our Hotline : 010-3656491
                 </li>
                 <li class="mr-2">
                     <a href="https://www.facebook.com/MyCutMalaysia" target="_blank" class="text-white" title="Mycut Facebook">

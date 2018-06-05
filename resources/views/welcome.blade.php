@@ -53,7 +53,7 @@
                     <div class="col-md-4  mb-5  pl-4  pr-4">
                         <div class="hows-sprites  how-sprites--location  mb-5  mx-auto"></div>
                         <h3 class="text-center">Tell Us When & Where</h3>
-                        <p class="text-center">Let us know when and where is your location for us to send our barber. Earliest booking time is 4 hours from current time</p>
+                        <p class="text-center">Let us know when and where is your location for us to send our barber. Earliest booking time is next 4 hours from current time, today</p>
                     </div>
                     <div class="col-md-4  mb-5  pl-4  pr-4">
                         <div class="hows-sprites  how-sprites--relax  mb-5  mx-auto"></div>

@@ -28,7 +28,7 @@
                         <p>Have your haircut by our senior & experienced barber</p>
                     </div>
                     <div class="o-tile__right  text-right">
-                        <span class="h2">RM 150</span>
+                        <span class="h2">RM 180</span>
                     </div>
                 </div>
 
@@ -38,7 +38,7 @@
                         <p>Have your haircut by our junior yet profesional barber</p>
                     </div>
                     <div class="o-tile__right  text-right">
-                        <span class="h2">RM 90</span>
+                        <span class="h2">RM 120</span>
                     </div>
                 </div>
 
@@ -68,7 +68,7 @@
                         <p>For kids age 12 years old below</p>
                     </div>
                     <div class="o-tile__right  text-right">
-                        <span class="h2">RM 70</span>
+                        <span class="h2">RM 80</span>
                     </div>
                 </div>
             </div>

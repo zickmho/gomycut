@@ -54,8 +54,8 @@
                         <div class="service-required  box  mb-3">
 
                             <div class="box-heading">
-                                <h4 class="box-heading-title  u-no-letter-spacing  text-uppercase">Service required</h4>
-                                <p class="box-heading-subtitle  text-muted">Choose the haircut service</p>
+                                <h4 class="box-heading-title  u-no-letter-spacing  text-uppercase">Select Haircut Service</h4>
+                                <p class="box-heading-subtitle  text-muted">Choose the haircut service by clicking (+) button</p>
                             </div>
 
                             <div class="booking-service  my-4">
@@ -65,7 +65,7 @@
                                         <span class="zicons-info  icon--16  text-muted  d-none  d-sm-inline-block  mr-2"  data-toggle="tooltip" data-placement="top" title="Have your haircut by our senior and experienced barber"></span> Premium Cut
                                     </div>
                                     <div class="booking-service__price">
-                                        RM150
+                                        RM180
                                     </div>
                                     <div class="d-sm-none  u-text-8  mt-1  text-muted">
                                         Have your haircut by our senior and experienced barber
@@ -73,11 +73,11 @@
                                     <div class="booking-service__total">
                                         <div class="input-group">
                                             <div class="input-group-prepend">
-                                                <button class="btn  btn-outline-secondary  btn-number" type="button"  data-type="minus" data-field="quant[1]" disabled>
+                                                <button class="btn  btn-outline-secondary  btn-number" type="button"  data-type="minus" data-field="quant[1]" {{ $session_data->senior_cut ? '' : 'disabled'}} >
                                                     <span class="icon--16  zicons-minus"></span>
                                                 </button>
                                             </div>
-                                            <input id="service-premium" class="form-control  input-number" type="number" name="quant[1]" min="0" max="10" value="0" data-price="150" required>
+                                            <input id="service-premium" class="form-control  input-number" type="number" name="quant[1]" min="0" max="10" value="{{ $session_data->senior_cut or '0' }}" data-price="180" required>
                                             <div class="input-group-append">
                                                 <button class="btn  btn-outline-secondary  btn-number" type="button" data-type="plus" data-field="quant[1]">
                                                     <span class="icon--16  zicons-plus"></span>
@@ -93,7 +93,7 @@
                                         Normal Cut
                                     </div>
                                     <div class="booking-service__price">
-                                        RM90
+                                        RM120
                                     </div>
                                     <div class="d-sm-none  u-text-8  mt-1  text-muted">
                                         Have your haircut by our junior yet profesional barber
@@ -101,11 +101,11 @@
                                     <div class="booking-service__total">
                                         <div class="input-group">
                                             <div class="input-group-prepend">
-                                                <button class="btn  btn-outline-secondary  btn-number" type="button"  data-type="minus" data-field="quant[2]" disabled>
+                                                <button class="btn  btn-outline-secondary  btn-number" type="button"  data-type="minus" data-field="quant[2]" {{ $session_data->junior_cut ? '' : 'disabled'}}>
                                                     <span class="icon--16  zicons-minus"></span>
                                                 </button>
                                             </div>
-                                            <input class="form-control  input-number" type="number" name="quant[2]" min="0" max="10" value="0" data-price="90" required>
+                                            <input class="form-control  input-number" type="number" name="quant[2]" min="0" max="10" value="{{ $session_data->junior_cut or '0' }}" data-price="120" required>
                                             <div class="input-group-append">
                                                 <button class="btn  btn-outline-secondary  btn-number" type="button" data-type="plus" data-field="quant[2]">
                                                     <span class="icon--16  zicons-plus"></span>
@@ -129,11 +129,11 @@
                                     <div class="booking-service__total">
                                         <div class="input-group">
                                             <div class="input-group-prepend">
-                                                <button class="btn  btn-outline-secondary  btn-number" type="button"  data-type="minus" data-field="quant[3]" disabled>
+                                                <button class="btn  btn-outline-secondary  btn-number" type="button"  data-type="minus" data-field="quant[3]" {{ $session_data->shave_cut ? '' : 'disabled'}}>
                                                     <span class="icon--16  zicons-minus"></span>
                                                 </button>
                                             </div>
-                                            <input class="form-control  input-number" type="number" name="quant[3]" min="0" max="10" value="0" data-price="70" required>
+                                            <input class="form-control  input-number" type="number" name="quant[3]" min="0" max="10" value="{{ $session_data->shave_cut or '0' }}" data-price="70" required>
                                             <div class="input-group-append">
                                                 <button class="btn  btn-outline-secondary  btn-number" type="button" data-type="plus" data-field="quant[3]">
                                                     <span class="icon--16  zicons-plus"></span>
@@ -157,11 +157,11 @@
                                     <div class="booking-service__total">
                                         <div class="input-group">
                                             <div class="input-group-prepend">
-                                                <button class="btn  btn-outline-secondary  btn-number" type="button"  data-type="minus" data-field="quant[4]" disabled>
+                                                <button class="btn  btn-outline-secondary  btn-number" type="button"  data-type="minus" data-field="quant[4]" {{ $session_data->beard_trim ? '' : 'disabled'}}>
                                                     <span class="icon--16  zicons-minus"></span>
                                                 </button>
                                             </div>
-                                            <input class="form-control  input-number" type="number" name="quant[4]" min="0" max="10" value="0" data-price="50" required>
+                                            <input class="form-control  input-number" type="number" name="quant[4]" min="0" max="10" value="{{ $session_data->beard_trim or '0' }}" data-price="50" required>
                                             <div class="input-group-append">
                                                 <button class="btn  btn-outline-secondary  btn-number" type="button" data-type="plus" data-field="quant[4]">
                                                     <span class="icon--16  zicons-plus"></span>
@@ -177,7 +177,7 @@
                                         Kid's Cut
                                     </div>
                                     <div class="booking-service__price">
-                                        RM70
+                                        RM80
                                     </div>
                                     <div class="d-sm-none  u-text-8  mt-1  text-muted">
                                         For kids age 12 years old below
@@ -185,11 +185,11 @@
                                     <div class="booking-service__total">
                                         <div class="input-group">
                                             <div class="input-group-prepend">
-                                                <button class="btn  btn-outline-secondary  btn-number" type="button"  data-type="minus" data-field="quant[5]" disabled>
+                                                <button class="btn  btn-outline-secondary  btn-number" type="button"  data-type="minus" data-field="quant[5]" {{ $session_data->kids_cut ? '' : 'disabled'}}>
                                                     <span class="icon--16  zicons-minus"></span>
                                                 </button>
                                             </div>
-                                            <input class="form-control  input-number" type="number" name="quant[5]" min="0" max="10" value="0" data-price="70" required>
+                                            <input class="form-control  input-number" type="number" name="quant[5]" min="0" max="10" value="{{ $session_data->kids_cut or '0' }}" data-price="80" required>
                                             <div class="input-group-append">
                                                 <button class="btn  btn-outline-secondary  btn-number" type="button" data-type="plus" data-field="quant[5]">
                                                     <span class="icon--16  zicons-plus"></span>
@@ -201,55 +201,66 @@
                             </div>
 
 
-                            <div class="summary-total text-right  d-block  d-md-none  py-3">
+                            <div class="summary-total text-right  d-block  d-md-none  py-3  mb-2">
                                 <div class="float-left">
                                     <strong>Total</strong>
                                 </div>
-                                <div id="total">RM <span class="total">0</span></div>
+                                <div id="total">RM <span class="total">{{$session_data->total_price or '0'}}</span></div>
                             </div>
 
+                            @if (!$session_data->session_id)
+                                <div class="mt-3  text-center clearfix  next-step-container">
+                                    <div class="float-right  w-50">
+                                        <button id="next-step-btn" class="btn btn-primary-green  btn-block">
+                                            Next Step
+                                        </button>
+                                        <small class="d-block mt-2 mr-2 text-muted">Enter booking information</small>
+                                    </div>
+                                </div>
+                            @endif
+
                         </div>
 
-                        <!-- contact information -->
-                        <div class="contact-information  box  mb-3">
-                            <form id="booking-contact">
-                                <div class="box-heading">
-                                    <h4 class="box-heading-title  u-no-letter-spacing  text-uppercase">Booking Information</h4>
-                                    <p class="box-heading-subtitle  text-muted">We will use your personal information to contact you</p>
-                                </div>
+                        <form id="second-step-booking" class="second-view" data-parsley-validate style="{{ $session_data->session_id ? '' : 'display: none;' }}">
+                            <!-- contact information -->
+                            <div class="contact-information  box  mb-3">
 
-                                <div class="contact-information__form">
-                                    <div class="form-group">
-                                        <label for="name">Fullname</label>
-                                        <input type="text" class="form-control" id="contact-name" name="contact-name" placeholder="Fullname" required  data-parsley-required-message="Please fill in your name"  data-parsley-pattern="^[A-z ]+$"  data-parsley-pattern-message="Please enter your name in alphabet only">
+                                    <div class="box-heading">
+                                        <h4 class="box-heading-title  u-no-letter-spacing  text-uppercase">Booking Information</h4>
+                                        <p class="box-heading-subtitle  text-muted">Please fill your information details. We will use your personal information to contact you</p>
                                     </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="name">Email Address</label>
-                                                <input type="email" class="form-control" id="contact-email" name="contact-email" placeholder="Email Address"  required  data-parsley-required-message="Please fill in your email address" >
+
+                                    <div class="contact-information__form">
+                                        <div class="form-group">
+                                            <label for="name">Fullname</label>
+                                            <input type="text" class="form-control" id="contact-name" name="contact-name" placeholder="Fullname" required  data-parsley-required-message="Please fill in your name"  data-parsley-pattern="^[A-z ]+$"  data-parsley-pattern-message="Please enter your name in alphabet only" value="{{$session_data->name or ''}}">
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="name">Email Address</label>
+                                                    <input type="email" class="form-control" id="contact-email" name="contact-email" placeholder="Email Address"  required  data-parsley-required-message="Please fill in your email address" value="{{$session_data->email or ''}}">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-6">
+                                                <div class="form-group">
+                                                    <label for="name">Mobile Number</label>
+                                                    <input type="tel" class="form-control" id="contact-phone" name="contact-phone" required  data-parsley-required-message="Your mobile number is required" data-parsley-errors-container="#booking-mobile-error" value="{{$session_data->phone or ''}}">
+                                                    <div id="booking-mobile-error"></div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="name">Mobile Number</label>
-                                                <input type="tel" class="form-control" id="contact-phone" name="contact-phone" required  data-parsley-required-message="Your mobile number is required" data-parsley-errors-container="#booking-mobile-error">
-                                                <div id="booking-mobile-error"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div id="btn-verify-number" class="form-group  mt-2  mb-2">
-                                        <button type="submit" class="btn mb-2 btn-primary-green  btn-block">Verify My Number</button>
-                                        <small class="text-muted">Before proceed with booking, we require your mobile number to be verify. 4 digits number will be send to your phone</small>
-                                    </div>
+                                        <!-- <div id="btn-verify-number" class="form-group  mt-2  mb-2">
+                                            <button type="submit" class="btn mb-2 btn-primary-green  btn-block">Verify My Number</button>
+                                            <small class="text-muted">Before proceed with booking, we require your mobile number to be verify. 4 digits number will be send to your phone</small>
+                                        </div> -->
 
-                                </div>
-                            </form>
-                        </div>
+                                    </div>
+                            </div>
 
-                        <form id="second-step-booking" data-parsley-validate>
+
                             <!-- address information -->
-                            <div class="second-view  address-information  box  mb-3" style="display: none;">
+                            <div class="address-information  box  mb-3">
 
                                 <div class="box-heading">
                                     <h4 class="box-heading-title  u-no-letter-spacing">Address Information</h4>
@@ -264,14 +275,14 @@
                                     <div class="col-md-2">
                                         <div class="form-group">
                                             <label>Unit No</label>
-                                            <input id="unit-no" type="text" class="form-control" name="unit-no" placeholder="No 44" required  data-parsley-required-message="Please enter unit no.">
+                                            <input id="unit-no" type="text" class="form-control" name="unit-no" placeholder="No 44" required  data-parsley-required-message="Please enter unit no." value="{{$session_data->house_unit_no or ''}}">
                                         </div>
                                     </div>
                                     <div class="col-md-10">
 
                                         <div class="form-group">
                                             <label>Address</label>
-                                            <textarea id="street-address" class="form-control" name="address" rows="2" cols="80" placeholder="Jalan Mayang Sari P10/30" required   data-parsley-required-message="Please enter address information"></textarea>
+                                            <textarea id="street-address" class="form-control" name="address" rows="2" cols="80" placeholder="Jalan Mayang Sari P10/30" required  data-parsley-required-message="Please enter address information">{{$session_data->address or ''}}</textarea>
                                         </div>
                                     </div>
                                 </div>
@@ -280,13 +291,13 @@
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>Postcode</label>
-                                            <input id="postcode" type="number" class="form-control" name="postcode" placeholder="21020" required  data-parsley-required-message="Please enter postcode" data-parsley-minlength="5"  data-parsley-maxlength="5" data-parsley-minlength-message="Postcode require 5 digits" data-parsley-maxlength-message="Postcode exceeded 5 digits">
+                                            <input id="postcode" type="number" class="form-control" name="postcode" placeholder="21020" required  data-parsley-required-message="Please enter postcode" data-parsley-minlength="5"  data-parsley-maxlength="5" data-parsley-minlength-message="Postcode require 5 digits" data-parsley-maxlength-message="Postcode exceeded 5 digits" value="{{$session_data->postcode or ''}}">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
                                         <div class="form-group">
                                             <label>City</label>
-                                            <input id="city" type="text" class="form-control" name="city" placeholder="Setia Alam" required  data-parsley-required-message="Please enter your city">
+                                            <input id="city" type="text" class="form-control" name="city" placeholder="Setia Alam" required  data-parsley-required-message="Please enter your city" value="{{$session_data->city or ''}}">
                                         </div>
                                     </div>
                                     <div class="col-md-4">
@@ -294,8 +305,8 @@
                                             <label>State</label>
                                             <select class="form-control" name="state" id="state" required  data-parsley-required-message="Please select state">
                                                 <option value="">Select state</option>
-                                                <option value="Selangor">Selangor</option>
-                                                <option value="Kuala Lumpur">Kuala Lumpur</option>
+                                                <option value="Selangor" {{$session_data->state == 'Selangor' ? 'selected' : '' }}>Selangor</option>
+                                                <option value="Kuala Lumpur" {{$session_data->state == 'Kuala Lumpur' ? 'selected' : '' }}>Kuala Lumpur</option>
                                             </select>
                                         </div>
                                     </div>
@@ -306,13 +317,13 @@
 
                                 <div class="form-group">
                                     <label>Address Remarks</label>
-                                    <input id="remark" type="text" class="form-control" name="remark" value="" placeholder="Eg: Meet me at guard house">
+                                    <input id="remark" type="text" class="form-control" name="remark" placeholder="Eg: Meet me at guard house" value="{{$session_data->remarks or ''}}">
                                 </div>
 
                             </div>
 
                             <!-- booking information -->
-                            <div class="second-view  booking-information  box  mb-3" style="display: none;">
+                            <div class="booking-information  box  mb-3">
 
                                 <div class="box-heading">
                                     <h4 class="box-heading-title  u-no-letter-spacing">Booking Date & Time</h4>
@@ -348,11 +359,11 @@
                                     </div>
                                 </div>
 
-                                <small class="text-muted">We only accept booking for 2 days in advanced including today. Earliest booking time available is 4 hours from current time</small>
+                                <div class="text-muted  u-text-7">We only accept booking for next 2 days in advanced. Earliest time for today's booking is on the next 4 hours. For today's booking it needs to be made before 730 PM.</div>
                             </div>
 
                             <!-- agree policy -->
-                            <div class="second-view  terms-information  box  mb-3" style="display: none;">
+                            <div class="terms-information  box  mb-3">
 
                                 <div class="form-check  pl-0  mb-4">
                                     <!-- <input class="form-check-input" id="terms-acceptance" type="checkbox" name="" value=""> -->
@@ -373,76 +384,76 @@
                             <h4>Your Booking Summary</h4>
                             <div class="summary-service">
                                 <ul>
-                                    <li id="summary-premium-cut" class="booking-summary d-flex" data-summary="quant[1]">
+                                    <li id="summary-premium-cut" class="booking-summary d-flex {{ $session_data->senior_cut ? 'active' : ''}}" data-summary="quant[1]">
                                         <div class="font-weight-bold">
                                             Premium Cut
                                         </div>
                                         <div class="booking-price-sum">
-                                            RM<span>0</span>
+                                            RM<span>{{ $session_data->senior_cut ? $session_data->senior_cut * 180 : '0'}}</span>
                                         </div>
                                         <div class="booking-category-sum  font-weight-bold  text-right">
-                                            0
+                                            {{ $session_data->senior_cut or '0'}}
                                         </div>
-                                        <input type="hidden" class="amount">
+                                        <input type="hidden" class="amount" value="{{ $session_data->senior_cut ? $session_data->senior_cut * 180 : '0'}}">
                                     </li>
-                                    <li id="summary-normal-cut"  class="booking-summary d-flex" data-summary="quant[2]">
+                                    <li id="summary-normal-cut"  class="booking-summary d-flex  {{ $session_data->junior_cut ? 'active' : ''}}" data-summary="quant[2]">
                                         <div class="font-weight-bold">
                                             Normal Cut
                                         </div>
                                         <div class="booking-price-sum">
-                                            RM<span>0</span>
+                                            RM<span>{{ $session_data->junior_cut ? $session_data->junior_cut * 120 : '0'}}</span>
                                         </div>
                                         <div class="booking-category-sum  font-weight-bold  text-right">
-                                            0
+                                            {{ $session_data->junior_cut or '0'}}
                                         </div>
-                                        <input type="hidden" class="amount">
+                                        <input type="hidden" class="amount" value="{{ $session_data->junior_cut ? $session_data->junior_cut * 120 : '0'}}">
                                     </li>
-                                    <li id="summary-shave-shape" class="booking-summary d-flex" data-summary="quant[3]">
+                                    <li id="summary-shave-shape" class="booking-summary d-flex  {{ $session_data->shave_cut ? 'active' : ''}}" data-summary="quant[3]">
                                         <div class="font-weight-bold">
                                             Shave and Shape
                                         </div>
                                         <div class="booking-price-sum">
-                                            RM<span>0</span>
+                                            RM<span>{{ $session_data->shave_cut ? $session_data->shave_cut * 70 : '0'}}</span>
                                         </div>
                                         <div class="booking-category-sum  font-weight-bold  text-right">
-                                            0
+                                            {{ $session_data->shave_cut or '0'}}
                                         </div>
-                                        <input type="hidden" class="amount">
+                                        <input type="hidden" class="amount" value="{{ $session_data->shave_cut ? $session_data->shave_cut * 70 : '0'}}">
                                     </li>
-                                    <li id="summary-beard-trim" class="booking-summary d-flex" data-summary="quant[4]">
+                                    <li id="summary-beard-trim" class="booking-summary d-flex  {{ $session_data->beard_trim ? 'active' : ''}}" data-summary="quant[4]">
                                         <div class="font-weight-bold">
                                             Beard Trim
                                         </div>
                                         <div class="booking-price-sum">
-                                            RM<span>0</span>
+                                            RM<span>{{ $session_data->beard_trim ? $session_data->beard_trim * 50 : '0'}}</span>
                                         </div>
                                         <div class="booking-category-sum  font-weight-bold  text-right">
-                                            0
+                                            {{ $session_data->beard_trim or '0'}}
                                         </div>
-                                        <input type="hidden" class="amount">
+                                        <input type="hidden" class="amount" value="{{ $session_data->beard_trim ? $session_data->beard_trim * 50 : '0'}}">
                                     </li>
-                                    <li id="summary-kids-cut" class="booking-summary d-flex" data-summary="quant[5]">
+                                    <li id="summary-kids-cut" class="booking-summary d-flex {{ $session_data->kids_cut ? 'active' : ''}}" data-summary="quant[5]">
                                         <div class="font-weight-bold">
                                             Kid's Cut
                                         </div>
                                         <div class="booking-price-sum">
-                                            RM<span>0</span>
+                                            RM<span>{{ $session_data->kids_cut ? $session_data->kids_cut * 50 : '0'}}</span>
                                         </div>
                                         <div class="booking-category-sum  font-weight-bold  text-right">
-                                            0
+                                            {{ $session_data->kids_cut or '0'}}
                                         </div>
-                                        <input type="hidden" class="amount">
+                                        <input type="hidden" class="amount" value="{{ $session_data->kids_cut ? $session_data->kids_cut * 80 : '0'}}">
                                     </li>
                                 </ul>
                             </div>
 
-                            <div class="summary-total  my-3  py-3  px-1  font-weight-bold">
+                            <div class="summary-total  my-3  py-2  px-1  font-weight-bold">
                                 <div id="subtotal" class="o-tile  py-1">
                                     <div class="o-tile__body">
                                         Subtotal
                                     </div>
                                     <div class="o-tile__right">
-                                        RM<span class="subtotal">0</span>
+                                        RM<span class="subtotal">{{$session_data->price or '0'}}</span>
                                     </div>
                                 </div>
 
@@ -451,7 +462,7 @@
                                         Discount
                                     </div>
                                     <div class="o-tile__right">
-                                        RM<span class="discount">0</span>
+                                        RM<span class="discount">{{$session_data->discount or '0'}}</span>
                                     </div>
                                 </div>
 
@@ -460,7 +471,7 @@
                                         Total
                                     </div>
                                     <div class="o-tile__right">
-                                        RM<span class="total">0</span>
+                                        RM<span class="total">{{$session_data->total_price or '0'}}</span>
                                     </div>
                                 </div>
                             </div>
@@ -468,11 +479,17 @@
                             <div class="summary-address-booking">
                                 <div class="form-group">
                                     <label class="font-weight-bold">Address: </label>
-                                    <div id="address-information" class="text-muted">No description</div>
+                                    <div id="address-information" class="text-muted">
+                                        {{$session_data->house_unit_no or ''}}  {{$session_data->address or ''}}  {{$session_data->postcode or ''}} {{$session_data->city or ''}} {{$session_data->state or ''}}
+
+                                        @if (!$session_data->house_unit_no && !$session_data->address && !$session_data->postcode && !$session_data->city && !$session_data->state)
+                                            No description
+                                        @endif
+                                    </div>
                                 </div>
                                 <div class="form-group">
                                     <label class="font-weight-bold">Address Remarks: </label>
-                                    <div id="address-remarks" class="text-muted">No description</div>
+                                    <div id="address-remarks" class="text-muted">{{$session_data->remarks or 'No description'}}</div>
                                 </div>
                                 <div class="form-group">
                                     <label class="font-weight-bold">Book Date & Time: </label>
@@ -491,24 +508,29 @@
             <input name="service-type-junior" id="request-service-type-junior">
             <input name="service-type-beard" id="request-service-type-beard">
             <input name="service-type-kids" id="request-service-type-kids"> -->
-            <input name="senior-count" id="request-senior-count">
-            <input name="junior-count" id="request-junior-count">
-            <input name="shave-count" id="request-shave-count">
-            <input name="beard-count" id="request-beard-count">
-            <input name="kids-count" id="request-kids-count">
+            <input name="senior-count" id="request-senior-count" placeholder="Senior Cut" value="{{ $session_data->senior_cut or '0' }}">
+            <input name="junior-count" id="request-junior-count" placeholder="Juniot Cut" value="{{ $session_data->junior_cut or '0' }}">
+            <input name="shave-count" id="request-shave-count" placeholder="Shave Cut" value="{{ $session_data->shave_cut or '0' }}">
+            <input name="beard-count" id="request-beard-count" placeholder="Beard Cut" value="{{ $session_data->beard_trim or '0' }}">
+            <input name="kids-count" id="request-kids-count" placeholder="Kids Cut" value="{{ $session_data->kids_cut or '0' }}">
 
-            <input name="city" id="request-city">
-            <input name="postcode" id="request-postcode">
-            <input name="house-unit-no" id="request-house-unit-no">
-            <input name="address" id="request-address">
-            <input name="remark" id="request-remark">
+            <input name="name" id="request-name" placeholder="Name" value="{{ $session_data->name or '' }}">
+            <input name="email" id="request-email" placeholder="Email" value="{{ $session_data->email or '' }}">
+            <input name="phone" id="request-phone" placeholder="Mobile" value="{{ $session_data->phone or '' }}">
 
-            <input name="date" id="request-date">
-            <input name="time" id="request-time">
+            <input name="city" id="request-city" placeholder="City" value="{{ $session_data->city or '' }}">
+            <input name="postcode" id="request-postcode" placeholder="Postcode" value="{{ $session_data->postcode or '' }}">
+            <input name="house-unit-no" id="request-house-unit-no" placeholder="Unit No" value="{{ $session_data->house_unit_no or '' }}">
+            <input name="state" id="request-state" placeholder="State" value="{{ $session_data->state or '' }}">
+            <input name="address" id="request-address" placeholder="Address" value="{{ $session_data->address or '' }}">
+            <input name="remark" id="request-remark" placeholder="Remark" value="{{ $session_data->remarks or '' }}">
 
-            <input name="price" id="request-price">
-            <input name="total-price" id="total-price">
-            <input name="discount" id="request-discount">
+            <input name="date" id="request-date" placeholder="Date">
+            <input name="time" id="request-time" placeholder="Time">
+
+            <input name="price" id="request-price" placeholder="Price" value="{{ $session_data->price or '' }}">
+            <input name="total-price" id="total-price" placeholder="Total price" value="{{ $session_data->total_price or '' }}">
+            <input name="discount" id="request-discount" placeholder="Discount" value="{{ $session_data->discount or '' }}">
         </form>
 
         @include('partials/script')
@@ -521,6 +543,30 @@
 
             $(document).ready(function(){
 
+                var serviceHeight = $('.service-required').height();
+                var nextStepBtnHeight = $('.next-step-container').height();
+                $('#next-step-btn').on('click', function(){
+                    if($('input[name="quant[1]"]').val() == '0' && $('input[name="quant[2]"]').val() == '0' && $('input[name="quant[3]"]').val() == '0' && $('input[name="quant[4]"]').val() == '0' && $('input[name="quant[5]"]').val() == '0') {
+                        alert('Ops, seems like your forget to choose service. Please choose any services by clicking (+) button');
+                        $('.service-required').addClass('blinking');
+
+                        setTimeout(function(){
+                            $('.service-required').removeClass('blinking');
+                        },4000);
+
+                        return false;
+                    }
+                    else {
+                        $('#second-step-booking').fadeIn();
+
+                        $('html,body').animate({
+                            scrollTop: $('.service-required').offset().top + serviceHeight - nextStepBtnHeight
+                        });
+
+                        $('.next-step-container').fadeOut();
+                    }
+                });
+
                 $('.booking-datepicker').pickadate({
                     min: true,
                     max: 2,
@@ -532,7 +578,7 @@
                 });
 
                 var bookingTime = $('.booking-timepicker').pickatime({
-                    min: [7,30],
+                    min: [8,30],
                     max: [23,30],
                     interval: 15,
                     formatSubmit: 'HH:i',
@@ -594,8 +640,9 @@
                     // other than today
                     else {
                         timePicker.set('disable', false);
-                        timePicker.set('min',[7,30]);
+                        timePicker.set('min',[8,30]);
                         timePicker.set('max',[23,30]);
+                        timePicker.set('highlight',[8,30])
                     }
 
                 });
@@ -744,17 +791,20 @@
                         bgOpacity: '.6',
                         buttons: {
                             edit: {
-                                text: 'EDIT'
+                                text: 'Cancel'
                             },
                             confirm: {
-                                text: 'CONFIRM BOOKING',
+                                text: 'Confirm Booking',
                                 btnClass:'btn-primary-green',
                                 action: function () {
-
+                                    $('#request-name').val($('#contact-name').val());
+                                    $('#request-email').val($('#contact-email').val());
+                                    $('#request-phone').val($('#contact-phone').val());
                                     $('#request-city').val($('#city').val());
                                     $('#request-postcode').val($('#postcode').val());
                                     $('#request-house-unit-no').val($('#unit-no').val());
                                     $('#request-address').val($('#street-address').val());
+                                    $('#request-state').val($('#state').val());
                                     $('#request-remark').val($('#remark').val());
                                     $('#request-date').val();
                                     $('#request-time').val();
@@ -789,19 +839,19 @@
                     }
 
                 })
-                $('#booking-contact').parsley();
+                // $('#booking-contact').parsley();
 
 
-                $('#booking-contact').submit(function(){
-
-                    $(this).parsley().validate();
-
-                    if ($(this).parsley().isValid()) {
-                        $('#btn-verify-number button').attr('disabled', true).text('Please wait..');
-                        verifyPhone();
-                        return false;
-                    }
-                });
+                // $('#booking-contact').submit(function(){
+                //
+                //     $(this).parsley().validate();
+                //
+                //     if ($(this).parsley().isValid()) {
+                //         $('#btn-verify-number button').attr('disabled', true).text('Please wait..');
+                //         verifyPhone();
+                //         return false;
+                //     }
+                // });
 
 
                 $('.btn-number').click(function(e){

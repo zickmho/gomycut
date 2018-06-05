@@ -10,10 +10,10 @@
 
                 <div class="row  mt-4">
                     <div class="col-6">
-                        +6016-3646491
+                        Phone : 010-3656491
                     </div>
                     <div class="col-6">
-                        9am - 12pm (daily)<br/>Open on public holiday
+                        830 AM - 1130 PM (daily)<br/>Open on public holiday
                     </div>
                 </div>
             </div>

@@ -14,7 +14,7 @@ class Appointment extends Model
      * @var array
      */
     protected $fillable = [
-        'id', 'barber_id', 'customer_id', 'barbercut', 'stylishcut', 'longcut', 'beardtrim', 'kidscut', 'bookdate'
+        'id', 'barber_id', 'customer_id', 'barbercut', 'stylishcut', 'longcut', 'beardtrim', 'kidscut', 'bookdate', 'booking_id'
     ];
 
     /**
