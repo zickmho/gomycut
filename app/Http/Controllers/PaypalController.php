@@ -156,12 +156,12 @@ class PaypalController extends Controller {
             $appointment->barber_id = 0;
             $appointment->booking_id = $session_data->id;
             $appointment->customer_id = $session_data->customer_id;
-            $appointment->barbercut = $session_data->senior_cut;
-            $appointment->juniorcut = $session_data->junior_cut;
+            $appointment->senior_cut = $session_data->senior_cut;
+            $appointment->junior_cut = $session_data->junior_cut;
             // $appointment->longcut = 0;
-            $appointment->shavecut = $session_data->shave_cut;
-            $appointment->beardtrim = $session_data->beard_trim;
-            $appointment->kidscut = $session_data->kids_cut;
+            $appointment->shave_cut = $session_data->shave_cut;
+            $appointment->beard_trim = $session_data->beard_trim;
+            $appointment->kids_cut = $session_data->kids_cut;
             $appointment->price = $session_data->total_price;
             $appointment->bookdate = $session_data->request_date.' '.$session_data->request_time;
             $appointment->status = 1;

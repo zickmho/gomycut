@@ -5,7 +5,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Booking</title>
+        <title>Book A Haircut</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-confirm/3.3.0/jquery-confirm.min.css">
         <link href="{{url('resources/assets/css/intlTelInput.css')}}" rel="stylesheet">
         @include('partials/head')
@@ -201,7 +201,7 @@
                             </div>
 
 
-                            <div class="summary-total text-right  d-block  d-md-none  py-3  mb-2">
+                            <div class="summary-total-mobile text-right  d-block  d-md-none  py-3  mb-2">
                                 <div class="float-left">
                                     <strong>Total</strong>
                                 </div>
@@ -447,7 +447,7 @@
                                 </ul>
                             </div>
 
-                            <div class="summary-total  my-3  py-2  px-1  font-weight-bold">
+                            <div class="summary-total  my-3  py-2  px-1 d-none  d-md-block  font-weight-bold">
                                 <div id="subtotal" class="o-tile  py-1">
                                     <div class="o-tile__body">
                                         Subtotal
@@ -779,9 +779,11 @@
                     var main_content = document.createElement('DIV');
                     var booking_list = $('.summary-service').clone();
                     var booking_account = $('.summary-total').clone();
+                    var booking_account_mobile = $('.summary-total-mobile').clone();
                     var booking_address = $('.summary-address-booking').clone();
                     main_content.appendChild(booking_list[0]);
                     main_content.appendChild(booking_account[0]);
+                    main_content.appendChild(booking_account_mobile[0]);
                     main_content.appendChild(booking_address[0]);
                     //console.log(main_content);
                     $.confirm({

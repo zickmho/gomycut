@@ -5,7 +5,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>Booking</title>
+        <title>Book A Haircut</title>
         @include('partials/head')
 
     </head>
@@ -307,7 +307,7 @@
             </div>
         </section>
 
-        @include('partials/script')            
+        @include('partials/script')
 
     </body>
 </html>
